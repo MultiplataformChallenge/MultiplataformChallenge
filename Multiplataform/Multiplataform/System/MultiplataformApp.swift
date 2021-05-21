@@ -13,7 +13,7 @@ struct MultiplataformApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ExerciseView()
+            InitialView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
