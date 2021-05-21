@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct CardModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(maxWidth: .infinity, alignment: .center)
+            .background(LinearGradient(gradient: Color.gradient, startPoint: .topLeading, endPoint: .bottomTrailing))
+            .cornerRadius(20)
+    }
+}
