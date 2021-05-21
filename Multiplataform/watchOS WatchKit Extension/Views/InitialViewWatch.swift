@@ -11,6 +11,7 @@ import SwiftUI
 struct ExerciseCellWatch: View {
     var cardIndex: Int
     var exercise: Exercise
+    
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 2.0) {
@@ -46,31 +47,10 @@ struct ExerciseCellWatch: View {
                 .offset(x: 55)
         }
         .frame(width: 164, height: 118)
-        .cardStyle()
+        .modifier(CardModifier())
         .onTapGesture {
             print(cardIndex)
                 
         }
-    }
-}
-
-struct CardModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .frame(maxWidth: .infinity, alignment: .center)
-            .background(LinearGradient(gradient: Color.gradient, startPoint: .topLeading, endPoint: .bottomTrailing))
-            .cornerRadius(20)
-    }
-}
-
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
-extension View {
-    func cardStyle() -> some View {
-        self.modifier(CardModifier())
     }
 }
