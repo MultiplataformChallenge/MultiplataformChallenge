@@ -13,7 +13,6 @@ struct InitialView: View {
             ForEach(0..<exercises.count) { item in
                 #if os(watchOS)
                 ExerciseCellWatch(cardIndex: item, exercise: exercises[item])
-                    .modifier(BackgroundModifier())
                 #else
                 ExerciseCellIOS(cardIndex: item, exercise: exercises[item])
                 #endif
