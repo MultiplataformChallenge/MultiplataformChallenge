@@ -39,6 +39,15 @@
 		E66BBB1426568DE700C6DDE7 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBABA26568BCF00C6DDE7 /* ExerciseView.swift */; };
 		E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0B26568A0400C6DDE7 /* Persistence.swift */; };
 		E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0D26568A0400C6DDE7 /* Multiplataform.xcdatamodeld */; };
+		EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */; };
+		EFACFA4B265800B600AFC6CC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBAEA26568C6600C6DDE7 /* ColorExtension.swift */; };
+		EFACFA4C265800E200AFC6CC /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA9A26568BA100C6DDE7 /* InitialView.swift */; };
+		EFACFA4E26582A4300AFC6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA0626568A0400C6DDE7 /* Assets.xcassets */; };
+		EFACFA522658312000AFC6CC /* InitialViewIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA512658312000AFC6CC /* InitialViewIOS.swift */; };
+		EFACFA532658318900AFC6CC /* InitialViewIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA512658312000AFC6CC /* InitialViewIOS.swift */; };
+		EFACFA55265836CA00AFC6CC /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA54265836CA00AFC6CC /* CardModifier.swift */; };
+		EFACFA56265836E900AFC6CC /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA54265836CA00AFC6CC /* CardModifier.swift */; };
+		EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +143,9 @@
 		E66BBADB26568C4400C6DDE7 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		E66BBAEA26568C6600C6DDE7 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E66BBAF926568C8100C6DDE7 /* ExerciseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRepository.swift; sourceTree = "<group>"; };
+		EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewWatch.swift; sourceTree = "<group>"; };
+		EFACFA512658312000AFC6CC /* InitialViewIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewIOS.swift; sourceTree = "<group>"; };
+		EFACFA54265836CA00AFC6CC /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +183,7 @@
 		E66BB9F626568A0300C6DDE7 = {
 			isa = PBXGroup;
 			children = (
+				EFACFA4F265830F500AFC6CC /* iOS */,
 				E66BBA0126568A0300C6DDE7 /* Multiplataform */,
 				E66BBA1826568A0400C6DDE7 /* MultiplataformTests */,
 				E66BBA2326568A0400C6DDE7 /* MultiplataformUITests */,
@@ -247,6 +260,7 @@
 		E66BBA4A26568A5300C6DDE7 /* watchOS WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EFACFA4D2658246400AFC6CC /* Views */,
 				E66BBA4F26568A5300C6DDE7 /* NotificationController.swift */,
 				E66BBA5126568A5300C6DDE7 /* NotificationView.swift */,
 				E66BBA5326568A5300C6DDE7 /* ComplicationController.swift */,
@@ -308,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				E66BBA0426568A0300C6DDE7 /* ContentView.swift */,
+				EFACFA54265836CA00AFC6CC /* CardModifier.swift */,
 			);
 			path = SharedComponents;
 			sourceTree = "<group>";
@@ -352,6 +367,30 @@
 				E66BBAF926568C8100C6DDE7 /* ExerciseRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		EFACFA4D2658246400AFC6CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFACFA4F265830F500AFC6CC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EFACFA502658310300AFC6CC /* Views */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EFACFA502658310300AFC6CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFACFA512658312000AFC6CC /* InitialViewIOS.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66BBA5926568A5400C6DDE7 /* Preview Assets.xcassets in Resources */,
+				EFACFA4E26582A4300AFC6CC /* Assets.xcassets in Resources */,
 				E66BBA5626568A5400C6DDE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,12 +650,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66BBAAB26568BB800C6DDE7 /* SettingsView.swift in Sources */,
+				EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */,
 				E66BBA0F26568A0400C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBA0C26568A0400C6DDE7 /* Persistence.swift in Sources */,
 				E66BBADC26568C4400C6DDE7 /* CoreDataStack.swift in Sources */,
 				E66BBABB26568BCF00C6DDE7 /* ExerciseView.swift in Sources */,
 				E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */,
+				EFACFA55265836CA00AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA9B26568BA100C6DDE7 /* InitialView.swift in Sources */,
+				EFACFA532658318900AFC6CC /* InitialViewIOS.swift in Sources */,
 				E66BBAC326568BDE00C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */,
@@ -646,14 +689,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFACFA522658312000AFC6CC /* InitialViewIOS.swift in Sources */,
 				E66BBB0D26568DE300C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */,
+				EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */,
 				E66BBA7926568A7900C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBA9326568B9500C6DDE7 /* ContentView.swift in Sources */,
 				E66BBA5026568A5300C6DDE7 /* NotificationController.swift in Sources */,
 				E66BBA5426568A5300C6DDE7 /* ComplicationController.swift in Sources */,
 				E66BBB1426568DE700C6DDE7 /* ExerciseView.swift in Sources */,
+				EFACFA4C265800E200AFC6CC /* InitialView.swift in Sources */,
+				EFACFA4B265800B600AFC6CC /* ColorExtension.swift in Sources */,
+				EFACFA56265836E900AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA5226568A5300C6DDE7 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
