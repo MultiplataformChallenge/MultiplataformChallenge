@@ -39,6 +39,12 @@
 		E66BBB1426568DE700C6DDE7 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBABA26568BCF00C6DDE7 /* ExerciseView.swift */; };
 		E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0B26568A0400C6DDE7 /* Persistence.swift */; };
 		E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0D26568A0400C6DDE7 /* Multiplataform.xcdatamodeld */; };
+		EF05EBCB265C9B5400855939 /* ExerciseData.json in Sources */ = {isa = PBXBuildFile; fileRef = EF05EBCA265C9B5400855939 /* ExerciseData.json */; };
+		EF05EBCD265C9C1300855939 /* ExerciseViewModelGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05EBCC265C9C1300855939 /* ExerciseViewModelGeneral.swift */; };
+		EF05EBCE265C9C3200855939 /* ExerciseData.json in Resources */ = {isa = PBXBuildFile; fileRef = EF05EBCA265C9B5400855939 /* ExerciseData.json */; };
+		EF05EBCF265C9C3700855939 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBACC26568C0C00C6DDE7 /* ExerciseModel.swift */; };
+		EF05EBD0265C9C3B00855939 /* ExerciseViewModelGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05EBCC265C9C1300855939 /* ExerciseViewModelGeneral.swift */; };
+		EF6C5F1E265C9FED008E4D33 /* ExerciseData.json in Resources */ = {isa = PBXBuildFile; fileRef = EF05EBCA265C9B5400855939 /* ExerciseData.json */; };
 		EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */; };
 		EFACFA4B265800B600AFC6CC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBAEA26568C6600C6DDE7 /* ColorExtension.swift */; };
 		EFACFA4C265800E200AFC6CC /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA9A26568BA100C6DDE7 /* InitialView.swift */; };
@@ -143,6 +149,8 @@
 		E66BBADB26568C4400C6DDE7 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		E66BBAEA26568C6600C6DDE7 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E66BBAF926568C8100C6DDE7 /* ExerciseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRepository.swift; sourceTree = "<group>"; };
+		EF05EBCA265C9B5400855939 /* ExerciseData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExerciseData.json; sourceTree = "<group>"; };
+		EF05EBCC265C9C1300855939 /* ExerciseViewModelGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModelGeneral.swift; sourceTree = "<group>"; };
 		EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewWatch.swift; sourceTree = "<group>"; };
 		EFACFA512658312000AFC6CC /* InitialViewIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewIOS.swift; sourceTree = "<group>"; };
 		EFACFA54265836CA00AFC6CC /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
@@ -339,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				E66BBACC26568C0C00C6DDE7 /* ExerciseModel.swift */,
+				EF05EBCC265C9C1300855939 /* ExerciseViewModelGeneral.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				E66BBAEA26568C6600C6DDE7 /* ColorExtension.swift */,
+				EF05EBCA265C9B5400855939 /* ExerciseData.json */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -527,6 +537,7 @@
 					};
 					E66BBA3926568A5100C6DDE7 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
 					};
 					E66BBA4526568A5300C6DDE7 = {
 						CreatedOnToolsVersion = 12.4;
@@ -561,6 +572,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6C5F1E265C9FED008E4D33 /* ExerciseData.json in Resources */,
 				E66BBA0A26568A0400C6DDE7 /* Preview Assets.xcassets in Resources */,
 				E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */,
 			);
@@ -602,6 +614,7 @@
 				E66BBA5926568A5400C6DDE7 /* Preview Assets.xcassets in Resources */,
 				EFACFA4E26582A4300AFC6CC /* Assets.xcassets in Resources */,
 				E66BBA5626568A5400C6DDE7 /* Assets.xcassets in Resources */,
+				EF05EBCE265C9C3200855939 /* ExerciseData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,9 +669,11 @@
 				E66BBADC26568C4400C6DDE7 /* CoreDataStack.swift in Sources */,
 				E66BBABB26568BCF00C6DDE7 /* ExerciseView.swift in Sources */,
 				E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */,
+				EF05EBCB265C9B5400855939 /* ExerciseData.json in Sources */,
 				EFACFA55265836CA00AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA9B26568BA100C6DDE7 /* InitialView.swift in Sources */,
 				EFACFA532658318900AFC6CC /* InitialViewIOS.swift in Sources */,
+				EF05EBCD265C9C1300855939 /* ExerciseViewModelGeneral.swift in Sources */,
 				E66BBAC326568BDE00C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */,
@@ -693,7 +708,9 @@
 				E66BBB0D26568DE300C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */,
+				EF05EBCF265C9C3700855939 /* ExerciseModel.swift in Sources */,
 				EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */,
+				EF05EBD0265C9C3B00855939 /* ExerciseViewModelGeneral.swift in Sources */,
 				E66BBA7926568A7900C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBA9326568B9500C6DDE7 /* ContentView.swift in Sources */,
 				E66BBA5026568A5300C6DDE7 /* NotificationController.swift in Sources */,
@@ -1030,14 +1047,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQK85Y8S7P;
 				IBSC_MODULE = watchOS_WatchKit_Extension;
 				INFOPLIST_FILE = "watchOS WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.watchOS.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.2;
@@ -1050,10 +1074,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQK85Y8S7P;
 				IBSC_MODULE = watchOS_WatchKit_Extension;
 				INFOPLIST_FILE = "watchOS WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.watchOS.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
