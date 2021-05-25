@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ExerciseCellWatch: View {
     var cardIndex: Int
-    var exercise: Exercise
+    var exercise: ExerciseModel
     
     var body: some View {
         ZStack {
@@ -21,13 +21,13 @@ struct ExerciseCellWatch: View {
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .lineLimit(2)
                 
-                Text("\(exercise.repeatExercise) Exercício")
+                Text("\(exercise.duration) Exercício")
                     .font(.system(.body, design: .rounded))
                     .foregroundColor(.white)
                     .fontWeight(.regular)
                     .lineLimit(1)
                 
-                Text("\(exercise.timeExercise) min")
+                Text("\(exercise.duration) min")
                     .font(.system(.body, design: .rounded))
                     .foregroundColor(.white)
                     .fontWeight(.regular)
@@ -38,7 +38,7 @@ struct ExerciseCellWatch: View {
             .padding([.leading, .top], 12.0)
             .offset(x: -15)
             
-            exercise.image
+            exercise.imageExercise
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: 40)
