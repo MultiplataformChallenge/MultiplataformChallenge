@@ -31,30 +31,8 @@ struct BackgroundModifier: ViewModifier {
     }
 }
 
-// mocked data
-var exercises = [
-    Exercise(identifier: UUID(), name: "Alongamento Completo", timeExercise: 3, repeatExercise: 1, category: .head, image: Image("a")),
-    Exercise(identifier: UUID(), name: "Alongamento Cabeça", timeExercise: 3, repeatExercise: 1, category: .head, image: Image("a")),
-    Exercise(identifier: UUID(), name: "Alongamento Braço", timeExercise: 3, repeatExercise: 1, category: .head, image: Image("a"))
-]
-
 struct InitialView_Previews: PreviewProvider {
     static var previews: some View {
         InitialView()
     }
-}
-
-enum ExerciseCategories {
-    case head
-    case leg
-    case arm
-}
-
-struct Exercise {
-    var identifier: UUID
-    var name: String
-    var timeExercise: Int
-    var repeatExercise: Int
-    var category: ExerciseCategories
-    var image: Image
 }
