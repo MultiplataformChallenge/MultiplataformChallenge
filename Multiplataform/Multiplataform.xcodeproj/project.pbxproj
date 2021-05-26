@@ -16,13 +16,10 @@
 		E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
 		E61EA6FF265E4EC6005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
 		E61EA702265E4F65005D602E /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA700265E4F56005D602E /* CharacterView.swift */; };
-		E61EA705265E5189005D602E /* ExerciseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */; };
 		E61EA707265E51D0005D602E /* ExerciseViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */; };
-		E61EA709265E555E005D602E /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA708265E555E005D602E /* Exercise.storyboard */; };
 		E61EA70B265E5773005D602E /* ConfigExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70A265E5773005D602E /* ConfigExerciseView.swift */; };
 		E61EA70D265E57AC005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
 		E61EA70E265E57D6005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
-		E61EA710265E57F8005D602E /* ConfigInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */; };
 		E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
 		E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA0626568A0400C6DDE7 /* Assets.xcassets */; };
@@ -74,10 +71,10 @@
 		EFB62A7E265D23A600F2FFE3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */; };
 		EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA700265E4F56005D602E /* CharacterView.swift */; };
 		EFB62A83265E826F00F2FFE3 /* ExerciseViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */; };
-		EFB62A84265E827200F2FFE3 /* ConfigExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70A265E5773005D602E /* ConfigExerciseView.swift */; };
-		EFB62A85265E8C4300F2FFE3 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA708265E555E005D602E /* Exercise.storyboard */; };
-		EFB62A86265E8C4500F2FFE3 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA708265E555E005D602E /* Exercise.storyboard */; };
-		EFB62A88265E8D9500F2FFE3 /* InitialInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A87265E8D9500F2FFE3 /* InitialInterfaceController.swift */; };
+		EFB62A89265E984100F2FFE3 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
+		EFB62A8B265E989F00F2FFE3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A8A265E989F00F2FFE3 /* TabBar.swift */; };
+		EFB62A8C265E98AB00F2FFE3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A8A265E989F00F2FFE3 /* TabBar.swift */; };
+		EFB62A8D265EBA1800F2FFE3 /* ConfigExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70A265E5773005D602E /* ConfigExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,12 +141,9 @@
 		E61EA6FA265E4DD1005D602E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		E61EA6FD265E4EB8005D602E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E61EA700265E4F56005D602E /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
-		E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInterfaceController.swift; sourceTree = "<group>"; };
 		E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewWatch.swift; sourceTree = "<group>"; };
-		E61EA708265E555E005D602E /* Exercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
 		E61EA70A265E5773005D602E /* ConfigExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigExerciseView.swift; sourceTree = "<group>"; };
 		E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustExerciseViewModel.swift; sourceTree = "<group>"; };
-		E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigInterfaceController.swift; sourceTree = "<group>"; };
 		E66BB9FF26568A0300C6DDE7 /* Multiplataform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplataform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplataformApp.swift; sourceTree = "<group>"; };
 		E66BBA0426568A0300C6DDE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -192,7 +186,7 @@
 		EFACFA512658312000AFC6CC /* InitialViewIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewIOS.swift; sourceTree = "<group>"; };
 		EFACFA54265836CA00AFC6CC /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
-		EFB62A87265E8D9500F2FFE3 /* InitialInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialInterfaceController.swift; sourceTree = "<group>"; };
+		EFB62A8A265E989F00F2FFE3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,7 +294,6 @@
 			children = (
 				E66BBA3F26568A5300C6DDE7 /* Assets.xcassets */,
 				E66BBA4126568A5300C6DDE7 /* Info.plist */,
-				E61EA708265E555E005D602E /* Exercise.storyboard */,
 			);
 			path = "watchOS WatchKit App";
 			sourceTree = "<group>";
@@ -315,10 +308,7 @@
 				E66BBA5526568A5400C6DDE7 /* Assets.xcassets */,
 				E66BBA5A26568A5400C6DDE7 /* Info.plist */,
 				E66BBA5B26568A5400C6DDE7 /* PushNotificationPayload.apns */,
-				E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */,
-				E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */,
 				E66BBA5726568A5400C6DDE7 /* Preview Content */,
-				EFB62A87265E8D9500F2FFE3 /* InitialInterfaceController.swift */,
 			);
 			path = "watchOS WatchKit Extension";
 			sourceTree = "<group>";
@@ -381,6 +371,7 @@
 				E61EA6FA265E4DD1005D602E /* CircleButton.swift */,
 				E61EA6FD265E4EB8005D602E /* TimerView.swift */,
 				E61EA700265E4F56005D602E /* CharacterView.swift */,
+				EFB62A8A265E989F00F2FFE3 /* TabBar.swift */,
 			);
 			path = SharedComponents;
 			sourceTree = "<group>";
@@ -628,7 +619,6 @@
 			files = (
 				EF6C5F1E265C9FED008E4D33 /* ExerciseData.json in Resources */,
 				E66BBA0A26568A0400C6DDE7 /* Preview Assets.xcassets in Resources */,
-				EFB62A85265E8C4300F2FFE3 /* Exercise.storyboard in Resources */,
 				E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,7 +648,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61EA709265E555E005D602E /* Exercise.storyboard in Resources */,
 				E66BBA4026568A5300C6DDE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,7 +657,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66BBA5926568A5400C6DDE7 /* Preview Assets.xcassets in Resources */,
-				EFB62A86265E8C4500F2FFE3 /* Exercise.storyboard in Resources */,
 				EFACFA4E26582A4300AFC6CC /* Assets.xcassets in Resources */,
 				E66BBA5626568A5400C6DDE7 /* Assets.xcassets in Resources */,
 				EF05EBCE265C9C3200855939 /* ExerciseData.json in Resources */,
@@ -719,6 +707,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB62A8B265E989F00F2FFE3 /* TabBar.swift in Sources */,
 				E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */,
 				E66BBAAB26568BB800C6DDE7 /* SettingsView.swift in Sources */,
 				EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */,
@@ -728,7 +717,6 @@
 				EFB62A83265E826F00F2FFE3 /* ExerciseViewWatch.swift in Sources */,
 				E66BBADC26568C4400C6DDE7 /* CoreDataStack.swift in Sources */,
 				EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */,
-				EFB62A84265E827200F2FFE3 /* ConfigExerciseView.swift in Sources */,
 				E66BBABB26568BCF00C6DDE7 /* ExerciseView.swift in Sources */,
 				E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */,
 				EF05EBCB265C9B5400855939 /* ExerciseData.json in Sources */,
@@ -736,6 +724,7 @@
 				A7F21359265E841C008DC51C /* JourneyPickerCell.swift in Sources */,
 				EFACFA55265836CA00AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA9B26568BA100C6DDE7 /* InitialView.swift in Sources */,
+				EFB62A8D265EBA1800F2FFE3 /* ConfigExerciseView.swift in Sources */,
 				EFACFA532658318900AFC6CC /* InitialViewIOS.swift in Sources */,
 				EF05EBCD265C9C1300855939 /* ExerciseViewModelGeneral.swift in Sources */,
 				E66BBAC326568BDE00C6DDE7 /* ExerciseViewModel.swift in Sources */,
@@ -776,13 +765,13 @@
 				E61EA707265E51D0005D602E /* ExerciseViewWatch.swift in Sources */,
 				EFACFA522658312000AFC6CC /* InitialViewIOS.swift in Sources */,
 				E66BBB0D26568DE300C6DDE7 /* ExerciseViewModel.swift in Sources */,
+				EFB62A89265E984100F2FFE3 /* MultiplataformApp.swift in Sources */,
 				E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */,
 				E61EA702265E4F65005D602E /* CharacterView.swift in Sources */,
 				E61EA70B265E5773005D602E /* ConfigExerciseView.swift in Sources */,
 				E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */,
 				E61EA70E265E57D6005D602E /* AdjustExerciseViewModel.swift in Sources */,
-				E61EA705265E5189005D602E /* ExerciseInterfaceController.swift in Sources */,
 				EF05EBCF265C9C3700855939 /* ExerciseModel.swift in Sources */,
 				EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */,
 				EF05EBD0265C9C3B00855939 /* ExerciseViewModelGeneral.swift in Sources */,
@@ -793,11 +782,10 @@
 				E66BBB1426568DE700C6DDE7 /* ExerciseView.swift in Sources */,
 				EFB62A7B265D206E00F2FFE3 /* InitialViewModel.swift in Sources */,
 				EFACFA4C265800E200AFC6CC /* InitialView.swift in Sources */,
-				E61EA710265E57F8005D602E /* ConfigInterfaceController.swift in Sources */,
-				EFB62A88265E8D9500F2FFE3 /* InitialInterfaceController.swift in Sources */,
 				EFACFA4B265800B600AFC6CC /* ColorExtension.swift in Sources */,
 				EFACFA56265836E900AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA5226568A5300C6DDE7 /* NotificationView.swift in Sources */,
+				EFB62A8C265E98AB00F2FFE3 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,7 @@ struct TimerView: View {
             // Timer progress
             Circle()
                 .trim(from: progress, to: 1)
-                .stroke(LinearGradient(gradient: baseColor, startPoint:  /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/), style: .init(lineWidth: 5, lineCap: .round, lineJoin: .round))
+                .stroke(LinearGradient(gradient: baseColor, startPoint: .leading, endPoint: .trailing), style: .init(lineWidth: 5, lineCap: .round, lineJoin: .round))
                 .frame(width: size, height: size)
                 .rotationEffect(.degrees(90))
                 .rotation3DEffect(

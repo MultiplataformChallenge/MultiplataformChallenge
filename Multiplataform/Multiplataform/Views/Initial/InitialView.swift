@@ -10,21 +10,21 @@ import SwiftUI
 var viewModel = InitialViewModel()
 
 struct InitialView: View {
-    
+
+    @State var isActive: Bool = false
     @State private var showingSheet = false
     
     var body: some View {
-        
         #if os(watchOS)
-        ScrollView(.vertical, showsIndicators: false) {
-            ForEach(0..<viewModel.categories.count) { item in
-                NavigationLink(destination: ExerciseViewWatch(viewModel: ExerciseViewModel())) {
-                    ExerciseCellWatch(cardIndex: item, category: viewModel.categories[item])
-                        .navigationBarBackButtonHidden(true)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(0..<viewModel.categories.count) { item in
+                    NavigationLink(destination: TabBar(rootIsActive: self.$isActive).navigationBarBackButtonHidden(true), isActive: self.$isActive) {
+                        ExerciseCellWatch(cardIndex: item, category: viewModel.categories[item])
+                    }
+                    .frame(width: 164, height: 118, alignment: .center)
+                    .cornerRadius(20)
                 }
-                
-                .frame(width: 164, height: 118, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .cornerRadius(20)
             }
         }
         #else
@@ -35,7 +35,6 @@ struct InitialView: View {
                 .sheet(isPresented: $showingSheet) {
                     SettingsView(showSheetView: $showingSheet)
                 }
-
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(0..<viewModel.categories.count) { item in
                     ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
@@ -44,7 +43,7 @@ struct InitialView: View {
         }
         .modifier(BackgroundModifier())
 //        .ignoresSafeArea()
-        #endif   
+        #endif
     }
     
 }

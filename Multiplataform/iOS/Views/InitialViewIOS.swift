@@ -53,7 +53,6 @@ struct ExerciseCellIOS: View {
         .padding([.all], 10)
         .onTapGesture {
             
-                
         }
     }
 }
