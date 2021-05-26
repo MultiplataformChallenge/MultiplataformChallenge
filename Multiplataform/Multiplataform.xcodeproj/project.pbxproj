@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E0513A0265E79C3008F2D50 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05139F265E79C3008F2D50 /* NotificationManager.swift */; };
 		E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
 		E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
 		E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
@@ -128,6 +129,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E05139F265E79C3008F2D50 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		E61EA6FA265E4DD1005D602E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		E61EA6FD265E4EB8005D602E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E61EA700265E4F56005D602E /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 			children = (
 				E66BBAEA26568C6600C6DDE7 /* ColorExtension.swift */,
 				EF05EBCA265C9B5400855939 /* ExerciseData.json */,
+				6E05139F265E79C3008F2D50 /* NotificationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -720,6 +723,7 @@
 				E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */,
 				E66BBAB326568BC400C6DDE7 /* SettingsViewModel.swift in Sources */,
 				E66BBACD26568C0C00C6DDE7 /* ExerciseModel.swift in Sources */,
+				6E0513A0265E79C3008F2D50 /* NotificationManager.swift in Sources */,
 				E66BBAEB26568C6600C6DDE7 /* ColorExtension.swift in Sources */,
 				E66BBAFA26568C8100C6DDE7 /* ExerciseRepository.swift in Sources */,
 			);
