@@ -19,6 +19,9 @@
 		E61EA70D265E57AC005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
 		E61EA70E265E57D6005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
 		E61EA710265E57F8005D602E /* ConfigInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */; };
+		E61EA714265E77E9005D602E /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
+		E61EA716265E7897005D602E /* ExerciseiOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA715265E7897005D602E /* ExerciseiOSView.swift */; };
+		E61EA717265E7897005D602E /* ExerciseiOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA715265E7897005D602E /* ExerciseiOSView.swift */; };
 		E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
 		E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA0626568A0400C6DDE7 /* Assets.xcassets */; };
@@ -137,6 +140,7 @@
 		E61EA70A265E5773005D602E /* ConfigExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigExerciseView.swift; sourceTree = "<group>"; };
 		E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustExerciseViewModel.swift; sourceTree = "<group>"; };
 		E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigInterfaceController.swift; sourceTree = "<group>"; };
+		E61EA715265E7897005D602E /* ExerciseiOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseiOSView.swift; sourceTree = "<group>"; };
 		E66BB9FF26568A0300C6DDE7 /* Multiplataform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplataform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplataformApp.swift; sourceTree = "<group>"; };
 		E66BBA0426568A0300C6DDE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -434,6 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				EFACFA512658312000AFC6CC /* InitialViewIOS.swift */,
+				E61EA715265E7897005D602E /* ExerciseiOSView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -719,6 +724,7 @@
 				E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */,
 				E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */,
 				E66BBAB326568BC400C6DDE7 /* SettingsViewModel.swift in Sources */,
+				E61EA716265E7897005D602E /* ExerciseiOSView.swift in Sources */,
 				E66BBACD26568C0C00C6DDE7 /* ExerciseModel.swift in Sources */,
 				E66BBAEB26568C6600C6DDE7 /* ColorExtension.swift in Sources */,
 				E66BBAFA26568C8100C6DDE7 /* ExerciseRepository.swift in Sources */,
@@ -745,6 +751,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61EA717265E7897005D602E /* ExerciseiOSView.swift in Sources */,
 				E61EA6FF265E4EC6005D602E /* TimerView.swift in Sources */,
 				E61EA707265E51D0005D602E /* ExerciseViewWatch.swift in Sources */,
 				EFACFA522658312000AFC6CC /* InitialViewIOS.swift in Sources */,
@@ -757,6 +764,7 @@
 				E61EA70E265E57D6005D602E /* AdjustExerciseViewModel.swift in Sources */,
 				E61EA705265E5189005D602E /* ExerciseInterfaceController.swift in Sources */,
 				EF05EBCF265C9C3700855939 /* ExerciseModel.swift in Sources */,
+				E61EA714265E77E9005D602E /* MultiplataformApp.swift in Sources */,
 				EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */,
 				EF05EBD0265C9C3B00855939 /* ExerciseViewModelGeneral.swift in Sources */,
 				EFB62A7E265D23A600F2FFE3 /* CategoryModel.swift in Sources */,
