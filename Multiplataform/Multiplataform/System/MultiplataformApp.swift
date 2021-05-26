@@ -13,12 +13,6 @@ struct MultiplataformApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            TabView {
-//                            InitialView()
-//                            ExerciseViewWatch()
-//                            ConfigExerciseView()
-//                        }
-//                        .tabViewStyle(PageTabViewStyle())
             InitialView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
