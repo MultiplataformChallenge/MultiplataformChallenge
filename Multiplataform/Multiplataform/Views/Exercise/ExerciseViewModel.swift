@@ -19,6 +19,7 @@ final class ExerciseViewModel: ObservableObject, Identifiable {
     // Set Exercises
     var index: Int
     var currentExercises: [ExerciseModel]
+    let numberOfExercises: Int
 
     // Timer Ajust
     @Published var timerState: TimerState
@@ -31,11 +32,10 @@ final class ExerciseViewModel: ObservableObject, Identifiable {
         self.timerState = .exercise
         self.repetition = currentExercises[index].timesOfRepetition
         self.currentTime = currentExercises[index].duration
-//        self.numberOfExercises = exercises.count
+        self.numberOfExercises = currentExercises.count
     }
 
 }
 
 //    let exercise = Exercise(name: "Alongamento Pernas", numberOfRepetitions: 2, timePerRepetition: 20, timeBetweenRepetition: 5, timeOfRest: 15)
 //    let exercise2 = Exercise(name: "Alongamento Panturrilhas", numberOfRepetitions: 1, timePerRepetition: 20, timeBetweenRepetition: 5, timeOfRest: 15)
-//    let numberOfExercises: Int
