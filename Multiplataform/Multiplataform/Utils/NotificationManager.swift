@@ -30,8 +30,7 @@ class NotificationManager {
     
     // when the app launches for the first time, the user gotta allow the notifications
     public func requestPermissions() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) {
-            success, error in
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
                 print("Permission granted")
             } else if let error = error {

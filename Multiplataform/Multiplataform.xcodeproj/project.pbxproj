@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6E0513A0265E79C3008F2D50 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05139F265E79C3008F2D50 /* NotificationManager.swift */; };
+		A7F21355265E8222008DC51C /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21354265E8222008DC51C /* NotificationCell.swift */; };
+		A7F21357265E83A9008DC51C /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21356265E83A9008DC51C /* NameCell.swift */; };
+		A7F21359265E841C008DC51C /* JourneyPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21358265E841C008DC51C /* JourneyPickerCell.swift */; };
 		E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
 		E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
 		E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
@@ -135,6 +138,9 @@
 
 /* Begin PBXFileReference section */
 		6E05139F265E79C3008F2D50 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A7F21354265E8222008DC51C /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		A7F21356265E83A9008DC51C /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		A7F21358265E841C008DC51C /* JourneyPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPickerCell.swift; sourceTree = "<group>"; };
 		E61EA6FA265E4DD1005D602E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		E61EA6FD265E4EB8005D602E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E61EA700265E4F56005D602E /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
@@ -351,6 +357,9 @@
 			children = (
 				E66BBAAA26568BB800C6DDE7 /* SettingsView.swift */,
 				E66BBAB226568BC400C6DDE7 /* SettingsViewModel.swift */,
+				A7F21354265E8222008DC51C /* NotificationCell.swift */,
+				A7F21356265E83A9008DC51C /* NameCell.swift */,
+				A7F21358265E841C008DC51C /* JourneyPickerCell.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -714,6 +723,7 @@
 				E66BBAAB26568BB800C6DDE7 /* SettingsView.swift in Sources */,
 				EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */,
 				E66BBA0F26568A0400C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
+				A7F21355265E8222008DC51C /* NotificationCell.swift in Sources */,
 				E66BBA0C26568A0400C6DDE7 /* Persistence.swift in Sources */,
 				EFB62A83265E826F00F2FFE3 /* ExerciseViewWatch.swift in Sources */,
 				E66BBADC26568C4400C6DDE7 /* CoreDataStack.swift in Sources */,
@@ -723,12 +733,14 @@
 				E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */,
 				EF05EBCB265C9B5400855939 /* ExerciseData.json in Sources */,
 				E61EA70D265E57AC005D602E /* AdjustExerciseViewModel.swift in Sources */,
+				A7F21359265E841C008DC51C /* JourneyPickerCell.swift in Sources */,
 				EFACFA55265836CA00AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA9B26568BA100C6DDE7 /* InitialView.swift in Sources */,
 				EFACFA532658318900AFC6CC /* InitialViewIOS.swift in Sources */,
 				EF05EBCD265C9C1300855939 /* ExerciseViewModelGeneral.swift in Sources */,
 				E66BBAC326568BDE00C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				EFB62A7D265D221400F2FFE3 /* CategoryModel.swift in Sources */,
+				A7F21357265E83A9008DC51C /* NameCell.swift in Sources */,
 				E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */,
 				E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */,

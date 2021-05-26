@@ -3,13 +3,16 @@
 //  Multiplataform
 //
 //  Created by Brena Amorim on 20/05/21.
-//
+//swiftlint:disable colon
 
 import SwiftUI
 
 var viewModel = InitialViewModel()
 
 struct InitialView: View {
+    
+    @State private var showingSheet = false
+    
     var body: some View {
         
         #if os(watchOS)
@@ -26,9 +29,12 @@ struct InitialView: View {
         }
         #else
         VStack(alignment: .trailing) {
-                CircleButton(imageName: "gear", size: 60, fontSize: 30, action: {print("pressed")}, hasImage: true)
-                    .frame(width: 100, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            CircleButton(imageName: "gear", size: 60, fontSize: 30, action: {showingSheet.toggle()}, hasImage: true)
+                    .frame(width:100, height:70, alignment:/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding(.all, 0)
+                .sheet(isPresented: $showingSheet) {
+                    SettingsView(showSheetView: $showingSheet)
+                }
 
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(0..<viewModel.categories.count) { item in
@@ -37,7 +43,7 @@ struct InitialView: View {
             }
         }
         .modifier(BackgroundModifier())
-        .ignoresSafeArea()
+//        .ignoresSafeArea()
         #endif   
     }
     

@@ -11,6 +11,12 @@ import SwiftUI
 struct MultiplataformApp: App {
 //    let persistenceController = PersistenceController.shared
 
+    let notificationsManager = NotificationManager.shared
+    
+    init() {
+        notificationsManager.requestPermissions()
+    }
+    
     var body: some Scene {
         WindowGroup {
 //            TabView {
@@ -20,6 +26,7 @@ struct MultiplataformApp: App {
 //                        }
 //                        .tabViewStyle(PageTabViewStyle())
             InitialView()
+            
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
