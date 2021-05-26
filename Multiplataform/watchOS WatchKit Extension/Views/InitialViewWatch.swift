@@ -48,9 +48,5 @@ struct ExerciseCellWatch: View {
         }
         .frame(width: 164, height: 118)
         .modifier(CardModifier())
-        .onTapGesture {
-            print(cardIndex)
-                
-        }
     }
 }

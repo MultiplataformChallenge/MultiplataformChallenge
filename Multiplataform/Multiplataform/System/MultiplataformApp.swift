@@ -13,11 +13,20 @@ struct MultiplataformApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ModalView()
-                .preferredColorScheme(.dark)
 
-//            ExerciseiOSView(viewModel: ExerciseViewModel(), adjustViewModel: AdjustExerciseViewModel())
+//                .preferredColorScheme(.dark)
+//
+            ExerciseiOSView(viewModel: ExerciseViewModel(), adjustViewModel: AdjustExerciseViewModel())
 //            InitialView()
+
+//            TabView {
+//                            InitialView()
+//                            ExerciseViewWatch()
+//                            ConfigExerciseView()
+//                        }
+//                        .tabViewStyle(PageTabViewStyle())
+//            InitialView()
+
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
