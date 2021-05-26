@@ -10,24 +10,24 @@ import SwiftUI
 
 struct ExerciseCellIOS: View {
     var cardIndex: Int
-    var exercise: ExerciseModel
+    var category: Category
     
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 8.0) {
-                Text(verbatim: exercise.name)
+                Text(verbatim: category.name)
                     .font(.system(.largeTitle, design: .rounded))
                     .foregroundColor(.white)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .lineLimit(2)
                     
-                Text("\(exercise.duration) Exercício")
+                Text("\(category.totalOfExercisesInCategory) Exercícios")
                     .font(.system(.title2, design: .rounded))
                     .foregroundColor(.white)
                     .fontWeight(.regular)
                     .lineLimit(1)
                 
-                Text("\(exercise.duration) min")
+                Text(String(format: "%.0f", category.exerciseDurationInCategory) + " min" )
                     .font(.system(.title3, design: .rounded))
                     .foregroundColor(.white)
                     .fontWeight(.regular)
@@ -38,7 +38,7 @@ struct ExerciseCellIOS: View {
             .padding([.top, .leading], 24.0)
             .offset(x: -70)
             
-            exercise.imageExercise
+            category.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: 150)
@@ -46,7 +46,7 @@ struct ExerciseCellIOS: View {
                 .padding(.top, 36.0)
                 .padding(.bottom, 12.0)
                 .padding(.trailing, 24)
-                .offset(x: 110)
+                .offset(x: 120)
         }
         .frame(width: 358, height: 366)
         .modifier(CardModifier())
