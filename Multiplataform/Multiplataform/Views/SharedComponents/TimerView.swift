@@ -3,7 +3,7 @@
 //  Multiplataform
 //
 //  Created by Brena Amorim on 26/05/21.
-//
+//swiftlint:disable colon
 
 import SwiftUI
 
