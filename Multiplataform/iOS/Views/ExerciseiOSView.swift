@@ -7,11 +7,30 @@
 
 import SwiftUI
 
+struct InfoModalView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        VStack {
+            Text("Info Exercise")
+        }
+        .frame(width: 100, height: 100)
+        .background(Color.black)
+        .edgesIgnoringSafeArea(.horizontal)
+        .onTapGesture {
+            presentationMode.wrappedValue.dismiss()
+        }
+    }
+}
+
 struct ExerciseiOSView: View {
     @ObservedObject var viewModel: ExerciseViewModel
     @ObservedObject var adjustViewModel: AdjustExerciseViewModel
 
-    //centésimos de segundos
+    // info
+    @State var infoPresented: Bool = false
+
+    // centésimos de segundos
     let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
     @State private var nameOfExercise: String = ""
 
@@ -46,8 +65,31 @@ struct ExerciseiOSView: View {
                                 Text("\(viewModel.currentExercises[index].name)")
                                     .font(Font.system(size: 22, weight: .bold, design: .rounded))
                                     .foregroundColor(.white)
-                                CircleButton(imageName: "info", size: 21, fontSize: 15, action: printInfo, hasImage: true)
+                                
+//                                Button(action:
+//                                        {self.infoPresented = true
+//                                    print(infoPresented)
+//                                }) {
+//                                    VStack {
+//                                            Image(systemName: "info")
+//                                                .padding()
+//                                                .frame(width: 21, height: 21)
+//                                                .background(LinearGradient(gradient: Color.gradient, startPoint: .top, endPoint: .bottom))
+//                                                .clipShape(Circle())
+//                                                .font(Font.system(size: 15, weight: .black, design: .rounded))
+//                                                .foregroundColor(.white)
+//                                    }
+//                                }
+                        //        .onTapGesture {
+                        //            self.isActive.toggle()
+                        //        }
+//                                .frame(width: CGFloat(21), height: 21)
+//                                .padding()
+                                CircleButton(imageName: "info", size: 21, fontSize: 15, action: {self.infoPresented.toggle()}, hasImage: true)
                                     .frame(width: 21, height: 21)
+                                    .fullScreenCover(isPresented: $infoPresented, content: {
+                                        InfoModalView.init()
+                                    })
                             } .frame(width: 300, height: 25, alignment: .leading)
 
                             Text("\(index + 1) de \(viewModel.currentExercises.count)")
