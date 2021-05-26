@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
+		E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
+		E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
+		E61EA6FF265E4EC6005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
+		E61EA702265E4F65005D602E /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA700265E4F56005D602E /* CharacterView.swift */; };
+		E61EA705265E5189005D602E /* ExerciseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */; };
+		E61EA707265E51D0005D602E /* ExerciseViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */; };
+		E61EA709265E555E005D602E /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA708265E555E005D602E /* Exercise.storyboard */; };
 		E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
 		E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA0626568A0400C6DDE7 /* Assets.xcassets */; };
@@ -23,7 +31,6 @@
 		E66BBA5426568A5300C6DDE7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA5326568A5300C6DDE7 /* ComplicationController.swift */; };
 		E66BBA5626568A5400C6DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA5526568A5400C6DDE7 /* Assets.xcassets */; };
 		E66BBA5926568A5400C6DDE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA5826568A5400C6DDE7 /* Preview Assets.xcassets */; };
-		E66BBA7926568A7900C6DDE7 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E66BBA9326568B9500C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
 		E66BBA9B26568BA100C6DDE7 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA9A26568BA100C6DDE7 /* InitialView.swift */; };
 		E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBAA226568BAB00C6DDE7 /* InitialViewModel.swift */; };
@@ -113,6 +120,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E61EA6FA265E4DD1005D602E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		E61EA6FD265E4EB8005D602E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		E61EA700265E4F56005D602E /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInterfaceController.swift; sourceTree = "<group>"; };
+		E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewWatch.swift; sourceTree = "<group>"; };
+		E61EA708265E555E005D602E /* Exercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
 		E66BB9FF26568A0300C6DDE7 /* Multiplataform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplataform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplataformApp.swift; sourceTree = "<group>"; };
 		E66BBA0426568A0300C6DDE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -261,6 +274,7 @@
 			children = (
 				E66BBA3F26568A5300C6DDE7 /* Assets.xcassets */,
 				E66BBA4126568A5300C6DDE7 /* Info.plist */,
+				E61EA708265E555E005D602E /* Exercise.storyboard */,
 			);
 			path = "watchOS WatchKit App";
 			sourceTree = "<group>";
@@ -275,6 +289,7 @@
 				E66BBA5526568A5400C6DDE7 /* Assets.xcassets */,
 				E66BBA5A26568A5400C6DDE7 /* Info.plist */,
 				E66BBA5B26568A5400C6DDE7 /* PushNotificationPayload.apns */,
+				E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */,
 				E66BBA5726568A5400C6DDE7 /* Preview Content */,
 			);
 			path = "watchOS WatchKit Extension";
@@ -331,6 +346,9 @@
 			children = (
 				E66BBA0426568A0300C6DDE7 /* ContentView.swift */,
 				EFACFA54265836CA00AFC6CC /* CardModifier.swift */,
+				E61EA6FA265E4DD1005D602E /* CircleButton.swift */,
+				E61EA6FD265E4EB8005D602E /* TimerView.swift */,
+				E61EA700265E4F56005D602E /* CharacterView.swift */,
 			);
 			path = SharedComponents;
 			sourceTree = "<group>";
@@ -383,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */,
+				E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -603,6 +622,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61EA709265E555E005D602E /* Exercise.storyboard in Resources */,
 				E66BBA4026568A5300C6DDE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +682,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */,
 				E66BBAAB26568BB800C6DDE7 /* SettingsView.swift in Sources */,
 				EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */,
 				E66BBA0F26568A0400C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
@@ -677,6 +698,7 @@
 				E66BBAC326568BDE00C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */,
+				E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */,
 				E66BBAB326568BC400C6DDE7 /* SettingsViewModel.swift in Sources */,
 				E66BBACD26568C0C00C6DDE7 /* ExerciseModel.swift in Sources */,
 				E66BBAEB26568C6600C6DDE7 /* ColorExtension.swift in Sources */,
@@ -704,14 +726,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61EA6FF265E4EC6005D602E /* TimerView.swift in Sources */,
+				E61EA707265E51D0005D602E /* ExerciseViewWatch.swift in Sources */,
 				EFACFA522658312000AFC6CC /* InitialViewIOS.swift in Sources */,
 				E66BBB0D26568DE300C6DDE7 /* ExerciseViewModel.swift in Sources */,
+				E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */,
+				E61EA702265E4F65005D602E /* CharacterView.swift in Sources */,
 				E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */,
+				E61EA705265E5189005D602E /* ExerciseInterfaceController.swift in Sources */,
 				EF05EBCF265C9C3700855939 /* ExerciseModel.swift in Sources */,
 				EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */,
 				EF05EBD0265C9C3B00855939 /* ExerciseViewModelGeneral.swift in Sources */,
-				E66BBA7926568A7900C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBA9326568B9500C6DDE7 /* ContentView.swift in Sources */,
 				E66BBA5026568A5300C6DDE7 /* NotificationController.swift in Sources */,
 				E66BBA5426568A5300C6DDE7 /* ComplicationController.swift in Sources */,
