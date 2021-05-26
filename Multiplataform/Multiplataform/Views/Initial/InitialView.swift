@@ -18,7 +18,13 @@ struct InitialView: View {
         #if os(watchOS)
         ScrollView(.vertical, showsIndicators: false) {
             ForEach(0..<viewModel.categories.count) { item in
-                ExerciseCellWatch(cardIndex: item, category: viewModel.categories[item])
+                NavigationLink(destination: ExerciseViewWatch(viewModel: ExerciseViewModel())) {
+                    ExerciseCellWatch(cardIndex: item, category: viewModel.categories[item])
+                        .navigationBarBackButtonHidden(true)
+                }
+                
+                .frame(width: 164, height: 118, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .cornerRadius(20)
             }
         }
         #else
