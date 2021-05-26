@@ -11,16 +11,28 @@ var viewModel = InitialViewModel()
 
 struct InitialView: View {
     var body: some View {
+        
+        #if os(watchOS)
         ScrollView(.vertical, showsIndicators: false) {
             ForEach(0..<viewModel.categories.count) { item in
-                #if os(watchOS)
                 ExerciseCellWatch(cardIndex: item, category: viewModel.categories[item])
-                #else
-                ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
-                #endif
+            }
+        }
+        #else
+        VStack(alignment: .trailing) {
+                CircleButton(imageName: "gear", size: 60, fontSize: 30, action: {print("pressed")}, hasImage: true)
+                    .frame(width: 100, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .padding(.all, 0)
+
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(0..<viewModel.categories.count) { item in
+                    ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
+                }
             }
         }
         .modifier(BackgroundModifier())
+        .ignoresSafeArea()
+        #endif   
     }
     
 }
