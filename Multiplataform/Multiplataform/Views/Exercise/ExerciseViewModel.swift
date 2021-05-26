@@ -36,9 +36,6 @@ final class ExerciseViewModel: ObservableObject, Identifiable {
 
 }
 
-
-
-
 //    let exercise = Exercise(name: "Alongamento Pernas", numberOfRepetitions: 2, timePerRepetition: 20, timeBetweenRepetition: 5, timeOfRest: 15)
 //    let exercise2 = Exercise(name: "Alongamento Panturrilhas", numberOfRepetitions: 1, timePerRepetition: 20, timeBetweenRepetition: 5, timeOfRest: 15)
 //    let numberOfExercises: Int

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
+		E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
+		E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
+		E61EA6FF265E4EC6005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
 		E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
 		E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA0626568A0400C6DDE7 /* Assets.xcassets */; };
@@ -113,6 +117,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E61EA6FA265E4DD1005D602E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		E61EA6FD265E4EB8005D602E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E66BB9FF26568A0300C6DDE7 /* Multiplataform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplataform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplataformApp.swift; sourceTree = "<group>"; };
 		E66BBA0426568A0300C6DDE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -331,6 +337,8 @@
 			children = (
 				E66BBA0426568A0300C6DDE7 /* ContentView.swift */,
 				EFACFA54265836CA00AFC6CC /* CardModifier.swift */,
+				E61EA6FA265E4DD1005D602E /* CircleButton.swift */,
+				E61EA6FD265E4EB8005D602E /* TimerView.swift */,
 			);
 			path = SharedComponents;
 			sourceTree = "<group>";
@@ -662,6 +670,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */,
 				E66BBAAB26568BB800C6DDE7 /* SettingsView.swift in Sources */,
 				EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */,
 				E66BBA0F26568A0400C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
@@ -677,6 +686,7 @@
 				E66BBAC326568BDE00C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */,
+				E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */,
 				E66BBAB326568BC400C6DDE7 /* SettingsViewModel.swift in Sources */,
 				E66BBACD26568C0C00C6DDE7 /* ExerciseModel.swift in Sources */,
 				E66BBAEB26568C6600C6DDE7 /* ColorExtension.swift in Sources */,
@@ -704,8 +714,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61EA6FF265E4EC6005D602E /* TimerView.swift in Sources */,
 				EFACFA522658312000AFC6CC /* InitialViewIOS.swift in Sources */,
 				E66BBB0D26568DE300C6DDE7 /* ExerciseViewModel.swift in Sources */,
+				E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */,
 				E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */,
 				EF05EBCF265C9C3700855939 /* ExerciseModel.swift in Sources */,
