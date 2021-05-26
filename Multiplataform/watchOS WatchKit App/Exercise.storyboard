@@ -9,9 +9,20 @@
         <!--ExerciseIC-->
         <scene sceneID="fRD-1l-P1O">
             <objects>
-                <controller identifier="ExerciseIC" id="IGi-cB-aGO" customClass="ExerciseInterfaceController" customModule="watchOS_WatchKit_App" customModuleProvider="target"/>
+                <controller identifier="ExerciseIC" id="IGi-cB-aGO" customClass="ExerciseInterfaceController" customModule="watchOS_WatchKit_App" customModuleProvider="target">
+                    <connections>
+                        <segue destination="PXS-Bc-aTG" kind="relationship" relationship="nextPage" id="2zg-4j-0a1"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="18" y="-20"/>
+        </scene>
+        <!--ConfigExerciseIC-->
+        <scene sceneID="Nrx-6o-6Eg">
+            <objects>
+                <controller identifier="ConfigExerciseIC" id="PXS-Bc-aTG" customClass="ConfigInterfaceController" customModule="watchOS_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="-13"/>
         </scene>
     </scenes>
 </document>
