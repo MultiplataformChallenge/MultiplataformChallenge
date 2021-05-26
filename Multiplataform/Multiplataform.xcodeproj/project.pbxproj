@@ -69,6 +69,11 @@
 		EFB62A7D265D221400F2FFE3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */; };
 		EFB62A7E265D23A600F2FFE3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */; };
 		EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA700265E4F56005D602E /* CharacterView.swift */; };
+		EFB62A83265E826F00F2FFE3 /* ExerciseViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */; };
+		EFB62A84265E827200F2FFE3 /* ConfigExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70A265E5773005D602E /* ConfigExerciseView.swift */; };
+		EFB62A85265E8C4300F2FFE3 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA708265E555E005D602E /* Exercise.storyboard */; };
+		EFB62A86265E8C4500F2FFE3 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA708265E555E005D602E /* Exercise.storyboard */; };
+		EFB62A88265E8D9500F2FFE3 /* InitialInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A87265E8D9500F2FFE3 /* InitialInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +184,7 @@
 		EFACFA512658312000AFC6CC /* InitialViewIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewIOS.swift; sourceTree = "<group>"; };
 		EFACFA54265836CA00AFC6CC /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		EFB62A87265E8D9500F2FFE3 /* InitialInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +310,7 @@
 				E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */,
 				E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */,
 				E66BBA5726568A5400C6DDE7 /* Preview Content */,
+				EFB62A87265E8D9500F2FFE3 /* InitialInterfaceController.swift */,
 			);
 			path = "watchOS WatchKit Extension";
 			sourceTree = "<group>";
@@ -609,6 +616,7 @@
 			files = (
 				EF6C5F1E265C9FED008E4D33 /* ExerciseData.json in Resources */,
 				E66BBA0A26568A0400C6DDE7 /* Preview Assets.xcassets in Resources */,
+				EFB62A85265E8C4300F2FFE3 /* Exercise.storyboard in Resources */,
 				E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,6 +656,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66BBA5926568A5400C6DDE7 /* Preview Assets.xcassets in Resources */,
+				EFB62A86265E8C4500F2FFE3 /* Exercise.storyboard in Resources */,
 				EFACFA4E26582A4300AFC6CC /* Assets.xcassets in Resources */,
 				E66BBA5626568A5400C6DDE7 /* Assets.xcassets in Resources */,
 				EF05EBCE265C9C3200855939 /* ExerciseData.json in Resources */,
@@ -703,8 +712,10 @@
 				EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */,
 				E66BBA0F26568A0400C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBA0C26568A0400C6DDE7 /* Persistence.swift in Sources */,
+				EFB62A83265E826F00F2FFE3 /* ExerciseViewWatch.swift in Sources */,
 				E66BBADC26568C4400C6DDE7 /* CoreDataStack.swift in Sources */,
 				EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */,
+				EFB62A84265E827200F2FFE3 /* ConfigExerciseView.swift in Sources */,
 				E66BBABB26568BCF00C6DDE7 /* ExerciseView.swift in Sources */,
 				E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */,
 				EF05EBCB265C9B5400855939 /* ExerciseData.json in Sources */,
@@ -767,6 +778,7 @@
 				EFB62A7B265D206E00F2FFE3 /* InitialViewModel.swift in Sources */,
 				EFACFA4C265800E200AFC6CC /* InitialView.swift in Sources */,
 				E61EA710265E57F8005D602E /* ConfigInterfaceController.swift in Sources */,
+				EFB62A88265E8D9500F2FFE3 /* InitialInterfaceController.swift in Sources */,
 				EFACFA4B265800B600AFC6CC /* ColorExtension.swift in Sources */,
 				EFACFA56265836E900AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA5226568A5300C6DDE7 /* NotificationView.swift in Sources */,

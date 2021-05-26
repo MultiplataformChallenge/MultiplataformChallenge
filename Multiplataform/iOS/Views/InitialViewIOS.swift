@@ -52,7 +52,7 @@ struct ExerciseCellIOS: View {
         .modifier(CardModifier())
         .padding([.all], 10)
         .onTapGesture {
-            print(cardIndex)
+            
                 
         }
     }
