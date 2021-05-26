@@ -46,13 +46,13 @@ struct ExerciseCellIOS: View {
                 .padding(.top, 36.0)
                 .padding(.bottom, 12.0)
                 .padding(.trailing, 24)
-                .offset(x: 120)
+                .offset(x: 110)
         }
         .frame(width: 358, height: 366)
         .modifier(CardModifier())
         .padding([.all], 10)
         .onTapGesture {
-            print(cardIndex)
+            
                 
         }
     }
