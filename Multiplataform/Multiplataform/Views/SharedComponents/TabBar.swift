@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct TabBar: View {
+    @Binding var rootIsActive: Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar()
+        TabView {
+            ExerciseViewWatch(viewModel: ExerciseViewModel())
+            ConfigExerciseView(viewModel: AdjustExerciseViewModel(), rootIsActive: $rootIsActive)
+        }
+        .tabViewStyle(PageTabViewStyle())
     }
 }
