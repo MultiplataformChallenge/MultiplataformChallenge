@@ -61,6 +61,10 @@
 		EFACFA55265836CA00AFC6CC /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA54265836CA00AFC6CC /* CardModifier.swift */; };
 		EFACFA56265836E900AFC6CC /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA54265836CA00AFC6CC /* CardModifier.swift */; };
 		EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */; };
+		EFB62A7B265D206E00F2FFE3 /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBAA226568BAB00C6DDE7 /* InitialViewModel.swift */; };
+		EFB62A7D265D221400F2FFE3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */; };
+		EFB62A7E265D23A600F2FFE3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */; };
+		EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA700265E4F56005D602E /* CharacterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +171,7 @@
 		EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewWatch.swift; sourceTree = "<group>"; };
 		EFACFA512658312000AFC6CC /* InitialViewIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewIOS.swift; sourceTree = "<group>"; };
 		EFACFA54265836CA00AFC6CC /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +371,7 @@
 			children = (
 				E66BBACC26568C0C00C6DDE7 /* ExerciseModel.swift */,
 				EF05EBCC265C9C1300855939 /* ExerciseViewModelGeneral.swift */,
+				EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -688,6 +694,7 @@
 				E66BBA0F26568A0400C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBA0C26568A0400C6DDE7 /* Persistence.swift in Sources */,
 				E66BBADC26568C4400C6DDE7 /* CoreDataStack.swift in Sources */,
+				EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */,
 				E66BBABB26568BCF00C6DDE7 /* ExerciseView.swift in Sources */,
 				E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */,
 				EF05EBCB265C9B5400855939 /* ExerciseData.json in Sources */,
@@ -696,6 +703,7 @@
 				EFACFA532658318900AFC6CC /* InitialViewIOS.swift in Sources */,
 				EF05EBCD265C9C1300855939 /* ExerciseViewModelGeneral.swift in Sources */,
 				E66BBAC326568BDE00C6DDE7 /* ExerciseViewModel.swift in Sources */,
+				EFB62A7D265D221400F2FFE3 /* CategoryModel.swift in Sources */,
 				E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */,
 				E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */,
 				E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */,
@@ -738,10 +746,12 @@
 				EF05EBCF265C9C3700855939 /* ExerciseModel.swift in Sources */,
 				EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */,
 				EF05EBD0265C9C3B00855939 /* ExerciseViewModelGeneral.swift in Sources */,
+				EFB62A7E265D23A600F2FFE3 /* CategoryModel.swift in Sources */,
 				E66BBA9326568B9500C6DDE7 /* ContentView.swift in Sources */,
 				E66BBA5026568A5300C6DDE7 /* NotificationController.swift in Sources */,
 				E66BBA5426568A5300C6DDE7 /* ComplicationController.swift in Sources */,
 				E66BBB1426568DE700C6DDE7 /* ExerciseView.swift in Sources */,
+				EFB62A7B265D206E00F2FFE3 /* InitialViewModel.swift in Sources */,
 				EFACFA4C265800E200AFC6CC /* InitialView.swift in Sources */,
 				EFACFA4B265800B600AFC6CC /* ColorExtension.swift in Sources */,
 				EFACFA56265836E900AFC6CC /* CardModifier.swift in Sources */,

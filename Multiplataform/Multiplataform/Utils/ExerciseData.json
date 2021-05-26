@@ -1,7 +1,7 @@
 [ {
       "identifier": 1,
       "name": "Rotação dos ombros para dentro",
-      "category": "Braço",
+      "category": "braço",
       "image": "rotacaoDosOmbros",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -12,7 +12,7 @@
     {
       "identifier": 2,
       "name": "Rotação dos ombros para fora",
-      "category": "Braço",
+      "category": "braço",
       "image": "rotacaoDosOmbros",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -23,7 +23,7 @@
     {
       "identifier": 3,
       "name": "Alongamento de pescoço para cima",
-      "category": "Cabeça",
+      "category": "cabeça",
       "image": "alongamentoPescocoCima",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -34,7 +34,7 @@
     {
       "identifier": 4,
       "name": "Alongamento de pescoço para baixo",
-      "category": "Cabeça",
+      "category": "cabeça",
       "image": "alongamentoPescocoBaixo",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -45,7 +45,7 @@
     {
       "identifier": 5,
       "name": "Alongamento de pescoço para esquerda",
-      "category": "Cabeça",
+      "category": "cabeça",
       "image": "alongamentoPescocoEsquerda",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -56,7 +56,7 @@
     {
       "identifier": 6,
       "name": "Alongamento de pescoço para direita",
-      "category": "Cabeça",
+      "category": "cabeça",
       "image": "alongamentoPescocoDireita",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -67,7 +67,7 @@
     {
       "identifier": 7,
       "name": "Alongamento dos pulsos braço esquerdo mão para cima",
-      "category": "Braço",
+      "category": "braço",
       "image": "alongamentoPulsoEsquerdaCima",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -78,7 +78,7 @@
     {
       "identifier": 8,
       "name": "Alongamento dos pulsos braço direito mão para cima",
-      "category": "Braço",
+      "category": "braço",
       "image": "alongamentoPulsoDireitaCima",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -89,7 +89,7 @@
     {
       "identifier": 9,
       "name": "Alongamento da coluna e posterior da coxa",
-      "category": "Coluna",
+      "category": "coluna",
       "image": "alongamentoColunaEPosteriorCoxa",
       "duration": 25,
       "timesOfRepetition": 2,
@@ -100,7 +100,7 @@
     {
       "identifier": 10,
       "name": "Alongamento peitoral",
-      "category": "Peito",
+      "category": "peitoral",
       "image": "alongamentoPeitoral",
       "duration": 25,
       "timesOfRepetition": 2,
@@ -111,7 +111,7 @@
     {
       "identifier": 11,
       "name": "Alongamento panturrilha esquerda",
-      "category": "Peito",
+      "category": "perna",
       "image": "alongamentoPanturrilhaEsquerda",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -122,7 +122,7 @@
     {
       "identifier": 1,
       "name": "Alongamento panturrilha direita",
-      "category": "Peito",
+      "category": "perna",
       "image": "alongamentoPanturrilhaDireita",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -133,7 +133,7 @@
     {
       "identifier": 13,
       "name": "Alongamento frontal coxa esquerda para frente",
-      "category": "Perna",
+      "category": "perna",
       "image": "alongamentoFrontalCoxaEsquerdaFrente",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -144,7 +144,7 @@
     {
       "identifier": 14,
       "name": "Alongamento frontal coxa direita para frente",
-      "category": "Perna",
+      "category": "perna",
       "image": "alongamentoFrontalCoxaDireitaFrente",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -155,7 +155,7 @@
     {
       "identifier": 15,
       "name": "Alongamento frontal coxa esquerda para trás",
-      "category": "Perna",
+      "category": "perna",
       "image": "alongamentoFrontalCoxaEsquerdaTras",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -166,7 +166,7 @@
     {
       "identifier": 16,
       "name": "Alongamento frontal coxa direita para trás",
-      "category": "Perna",
+      "category": "perna",
       "image": "alongamentoFrontalCoxaDireitaTras",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -177,7 +177,7 @@
     {
       "identifier": 17,
       "name": "Alongamento dos pulsos braço esquerdo mão para baixo",
-      "category": "Braço",
+      "category": "braço",
       "image": "alongamentoPulsoEsquerdaBaixo",
       "duration": 25,
       "timesOfRepetition": 1,
@@ -188,7 +188,7 @@
     {
       "identifier": 18,
       "name": "Alongamento dos pulsos braço direito mão para baixo",
-      "category": "Braço",
+      "category": "braço",
       "image": "alongamentoPulsoDireitaBaixo",
       "duration": 25,
       "timesOfRepetition": 1,

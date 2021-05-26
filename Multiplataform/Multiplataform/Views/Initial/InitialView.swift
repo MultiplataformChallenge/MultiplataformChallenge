@@ -7,14 +7,16 @@
 
 import SwiftUI
 
+var viewModel = InitialViewModel()
+
 struct InitialView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            ForEach(0..<exercises.count) { item in
+            ForEach(0..<viewModel.categories.count) { item in
                 #if os(watchOS)
-                ExerciseCellWatch(cardIndex: item, exercise: exercises[item])
+                ExerciseCellWatch(cardIndex: item, category: viewModel.categories[item])
                 #else
-                ExerciseCellIOS(cardIndex: item, exercise: exercises[item])
+                ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
                 #endif
             }
         }
