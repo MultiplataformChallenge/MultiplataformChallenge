@@ -30,7 +30,7 @@ struct ExerciseViewWatch: View {
     var body: some View {
         NavigationView {
             VStack {
-                CharacterView(image: Image("legExercise"))
+                CharacterView(image: viewModel.currentExercises[index].imageExercise)
                     .offset(y: 8)
                 ZStack {
                     TimerView(size: 60, fontSize: 24, progress: counter/targetCount, targetCount: $targetCount, counter: $counter)
