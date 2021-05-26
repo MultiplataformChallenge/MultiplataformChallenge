@@ -56,6 +56,7 @@ struct ExerciseViewWatch: View {
                                         // foward
                                         if viewModel.currentExercises.count == 1 || (index + 1) > (viewModel.currentExercises.count - 1) {
                                             // finish
+                                            UserDefaults.standard.setValue(false, forKey: "forward")
                                             UserDefaults.standard.setValue(true, forKey: "isFinished")
                                         } else if (index + 1) <= (viewModel.currentExercises.count - 1) {
                                             print((index + 1))
@@ -124,8 +125,8 @@ struct ExerciseViewWatch: View {
                                 print(index)
                                 // Change for end
                                 counter = 0
-                                index += 1
-                                if index < viewModel.numberOfExercises {
+                                if (index + 1) < (viewModel.numberOfExercises - 1) {
+                                    index += 1
                                     viewModel.timerState = .exercise
                                     viewModel.repetition = viewModel.currentExercises[index].timesOfRepetition
                                     targetCount = CGFloat(viewModel.currentExercises[index].duration)
@@ -147,7 +148,6 @@ struct ExerciseViewWatch: View {
                 }
             }
             .navigationTitle("\(index + 1) de \(viewModel.numberOfExercises)")
-
         }
     }
 }

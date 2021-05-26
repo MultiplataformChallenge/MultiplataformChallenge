@@ -15,6 +15,10 @@
 		E61EA705265E5189005D602E /* ExerciseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */; };
 		E61EA707265E51D0005D602E /* ExerciseViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */; };
 		E61EA709265E555E005D602E /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA708265E555E005D602E /* Exercise.storyboard */; };
+		E61EA70B265E5773005D602E /* ConfigExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70A265E5773005D602E /* ConfigExerciseView.swift */; };
+		E61EA70D265E57AC005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
+		E61EA70E265E57D6005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
+		E61EA710265E57F8005D602E /* ConfigInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */; };
 		E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
 		E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA0626568A0400C6DDE7 /* Assets.xcassets */; };
@@ -126,6 +130,9 @@
 		E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInterfaceController.swift; sourceTree = "<group>"; };
 		E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewWatch.swift; sourceTree = "<group>"; };
 		E61EA708265E555E005D602E /* Exercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
+		E61EA70A265E5773005D602E /* ConfigExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigExerciseView.swift; sourceTree = "<group>"; };
+		E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustExerciseViewModel.swift; sourceTree = "<group>"; };
+		E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigInterfaceController.swift; sourceTree = "<group>"; };
 		E66BB9FF26568A0300C6DDE7 /* Multiplataform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplataform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplataformApp.swift; sourceTree = "<group>"; };
 		E66BBA0426568A0300C6DDE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -290,6 +297,7 @@
 				E66BBA5A26568A5400C6DDE7 /* Info.plist */,
 				E66BBA5B26568A5400C6DDE7 /* PushNotificationPayload.apns */,
 				E61EA704265E5189005D602E /* ExerciseInterfaceController.swift */,
+				E61EA70F265E57F8005D602E /* ConfigInterfaceController.swift */,
 				E66BBA5726568A5400C6DDE7 /* Preview Content */,
 			);
 			path = "watchOS WatchKit Extension";
@@ -319,6 +327,7 @@
 			children = (
 				E66BBABA26568BCF00C6DDE7 /* ExerciseView.swift */,
 				E66BBAC226568BDE00C6DDE7 /* ExerciseViewModel.swift */,
+				E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -402,6 +411,7 @@
 			children = (
 				EFACFA492658005F00AFC6CC /* InitialViewWatch.swift */,
 				E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */,
+				E61EA70A265E5773005D602E /* ConfigExerciseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -691,6 +701,7 @@
 				E66BBABB26568BCF00C6DDE7 /* ExerciseView.swift in Sources */,
 				E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */,
 				EF05EBCB265C9B5400855939 /* ExerciseData.json in Sources */,
+				E61EA70D265E57AC005D602E /* AdjustExerciseViewModel.swift in Sources */,
 				EFACFA55265836CA00AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA9B26568BA100C6DDE7 /* InitialView.swift in Sources */,
 				EFACFA532658318900AFC6CC /* InitialViewIOS.swift in Sources */,
@@ -732,8 +743,10 @@
 				E66BBB0D26568DE300C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */,
 				E61EA702265E4F65005D602E /* CharacterView.swift in Sources */,
+				E61EA70B265E5773005D602E /* ConfigExerciseView.swift in Sources */,
 				E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */,
+				E61EA70E265E57D6005D602E /* AdjustExerciseViewModel.swift in Sources */,
 				E61EA705265E5189005D602E /* ExerciseInterfaceController.swift in Sources */,
 				EF05EBCF265C9C3700855939 /* ExerciseModel.swift in Sources */,
 				EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */,
@@ -743,6 +756,7 @@
 				E66BBA5426568A5300C6DDE7 /* ComplicationController.swift in Sources */,
 				E66BBB1426568DE700C6DDE7 /* ExerciseView.swift in Sources */,
 				EFACFA4C265800E200AFC6CC /* InitialView.swift in Sources */,
+				E61EA710265E57F8005D602E /* ConfigInterfaceController.swift in Sources */,
 				EFACFA4B265800B600AFC6CC /* ColorExtension.swift in Sources */,
 				EFACFA56265836E900AFC6CC /* CardModifier.swift in Sources */,
 				E66BBA5226568A5300C6DDE7 /* NotificationView.swift in Sources */,
