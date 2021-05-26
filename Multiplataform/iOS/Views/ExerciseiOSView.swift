@@ -215,4 +215,3 @@ struct ExerciseiOSView: View {
         //                }
     }
 }
-

@@ -74,7 +74,6 @@
 		EFB62A7D265D221400F2FFE3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */; };
 		EFB62A7E265D23A600F2FFE3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */; };
 		EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA700265E4F56005D602E /* CharacterView.swift */; };
-		EFB62A83265E826F00F2FFE3 /* ExerciseViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */; };
 		EFB62A86265E8C4500F2FFE3 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA708265E555E005D602E /* Exercise.storyboard */; };
 		EFB62A88265E8D9500F2FFE3 /* InitialInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A87265E8D9500F2FFE3 /* InitialInterfaceController.swift */; };
 /* End PBXBuildFile section */
@@ -720,7 +719,6 @@
 				EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */,
 				E66BBA0F26568A0400C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBA0C26568A0400C6DDE7 /* Persistence.swift in Sources */,
-				EFB62A83265E826F00F2FFE3 /* ExerciseViewWatch.swift in Sources */,
 				E66BBADC26568C4400C6DDE7 /* CoreDataStack.swift in Sources */,
 				EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */,
 				E66BBABB26568BCF00C6DDE7 /* ExerciseView.swift in Sources */,

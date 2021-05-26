@@ -16,8 +16,8 @@ struct MultiplataformApp: App {
 
 //                .preferredColorScheme(.dark)
 //
-            ExerciseiOSView(viewModel: ExerciseViewModel(), adjustViewModel: AdjustExerciseViewModel())
-//            InitialView()
+//            ExerciseiOSView(viewModel: ExerciseViewModel(), adjustViewModel: AdjustExerciseViewModel())
+            InitialView()
 
 //            TabView {
 //                            InitialView()
