@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ExerciseiOSView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     @ObservedObject var viewModel: ExerciseViewModel
     @ObservedObject var adjustViewModel: AdjustExerciseViewModel
     
@@ -70,7 +72,9 @@ struct ExerciseiOSView: View {
                                 .foregroundColor(.white)
                         }
                         
-                        CircleButton(imageName: "xmark", size: 60, fontSize: 27, action: {adjustViewModel.finish()}, hasImage: true)
+                        CircleButton(imageName: "xmark", size: 60, fontSize: 27, action: {adjustViewModel.finish()
+                            self.presentationMode.wrappedValue.dismiss()
+                        }, hasImage: true)
                             .frame(width: 60, height: 60)
                             .offset(x: 16)
                     }
