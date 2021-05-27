@@ -22,6 +22,9 @@ struct NotificationCell: View {
             .toggleStyle(SwitchToggleStyle(tint: .actionPurple)).onChange(of: notificationBool, perform: { bool in
                 if (bool) {
                     UserDefaults.standard.setValue(true, forKey: "notificationBool")
+                    if value == 0 {
+                        value = 1
+                    }
                     notificationsManager.setTimeOfNotification(ofType: notificationType, minutes: Double(value))
                     notificationsManager.activateNotification(ofType: notificationType)
                 } else {

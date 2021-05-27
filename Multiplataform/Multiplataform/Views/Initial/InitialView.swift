@@ -11,7 +11,7 @@ import SwiftUI
 var viewModel = InitialViewModel()
 
 struct InitialView: View {
-
+    
     @State var exerciseIsActive: Bool = false
     @State var isActive: Bool = false
     @State private var showingSheet = false
@@ -33,11 +33,11 @@ struct InitialView: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     // Clear background
-
+                    
                 }
                 .background(
                     NavigationLink(destination: TabBar(rootIsActive: self.$isActive, exerciseViewModel: ExerciseViewModel(currentExercises: viewModel.categories[selectedItem].exercises), targetCount: CGFloat(viewModel.categories[selectedItem].exercises[0].duration)).navigationBarBackButtonHidden(true), isActive: self.$isActive) {
-
+                        
                     }
                 )
             }
@@ -46,36 +46,31 @@ struct InitialView: View {
         NavigationView {
             VStack(alignment: .trailing) {
                 CircleButton(imageName: "gear", size: 60, fontSize: 30, action: {showingSheet.toggle()}, hasImage: true)
-                        .frame(width:100, height:70, alignment:/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .padding(.all, 0)
+                    .frame(width:100, height:70, alignment:/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .padding(.all, 0)
                     .sheet(isPresented: $showingSheet) {
                         SettingsView(showSheetView: $showingSheet)
                     }
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(0..<viewModel.categories.count) { item in
-                        Button(action: {
-                            selectedItem = item
-                            isActive = true
-                        }) {
-                            ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
-//                                .padding()
-                                .frame(width: 358, height: 366)
-                                .modifier(CardModifier())
-                                .padding([.all], 10)
-                        }
-                        .buttonStyle(PlainButtonStyle())
-
-                    }
-                    .background(
+                        
                         NavigationLink(destination: ExerciseiOSView(viewModel: ExerciseViewModel(currentExercises: viewModel.categories[selectedItem].exercises), adjustViewModel: AdjustExerciseViewModel(), isModalVisible: false, exerciseIsActive: self.$exerciseIsActive, targetCount: CGFloat(viewModel.categories[selectedItem].exercises[0].duration)).navigationBarBackButtonHidden(true), isActive: self.$isActive) {
-
+                            Button(action: {
+                                print("Exercício")
+                                selectedItem = item
+                                isActive = true
+                            }) {
+                                ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
+                                    .padding()
+                            }
+                            .buttonStyle(DefaultButtonStyle())
                         }
-                        .navigationBarHidden(true)
-                    )
+                    }
                 }
             }
+            .navigationBarHidden(true)
             .modifier(BackgroundModifier())
-    //        .ignoresSafeArea()
+            //        .ignoresSafeArea()
         }
         #endif
     }
@@ -90,26 +85,8 @@ struct BackgroundModifier: ViewModifier {
     }
 }
 
-struct InitialView_Previews: PreviewProvider {
-    static var previews: some View {
-        InitialView()
-    }
-}
-
-//NavigationView {
-//    VStack(alignment: .trailing) {
-//        CircleButton(imageName: "gear", size: 60, fontSize: 30, action: {showingSheet.toggle()}, hasImage: true)
-//                .frame(width:100, height:70, alignment:/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//                .padding(.all, 0)
-//            .sheet(isPresented: $showingSheet) {
-//                SettingsView(showSheetView: $showingSheet)
-//            }
-//        ScrollView(.vertical, showsIndicators: false) {
-//            ForEach(0..<viewModel.categories.count) { item in
-//                ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
-//            }
-//        }
+//struct InitialView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        InitialView()
 //    }
-//    .modifier(BackgroundModifier())
-//        .ignoresSafeArea()
 //}

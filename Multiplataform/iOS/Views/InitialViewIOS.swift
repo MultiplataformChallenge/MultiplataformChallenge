@@ -49,10 +49,8 @@ struct ExerciseCellIOS: View {
                 .offset(x: 110)
         }
         .frame(width: 358, height: 366)
+//        .frame(maxWidth: 358, maxHeight: 366)
         .modifier(CardModifier())
         .padding([.all], 10)
-        .onTapGesture {
-            
-        }
     }
 }

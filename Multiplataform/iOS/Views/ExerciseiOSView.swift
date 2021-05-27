@@ -15,6 +15,8 @@ struct ExerciseiOSView: View {
     
     // info
     @State var isModalVisible = false
+    
+    @State private var showingSheet = false
     // quit
     @Binding var exerciseIsActive: Bool
     
@@ -69,11 +71,15 @@ struct ExerciseiOSView: View {
                                 .font(Font.system(size: 18, weight: .medium, design: .rounded))
                                 .foregroundColor(.white)
                         }
-                        
-                        CircleButton(imageName: "info", size: 21, fontSize: 15, action: {isModalVisible.toggle()}, hasImage: true)
+//                        isModalVisible.toggle()
+                        CircleButton(imageName: "info", size: 21, fontSize: 15, action: {showingSheet.toggle()}, hasImage: true)
+                            .sheet(isPresented: $showingSheet) {
+                                ModalView(isVisible: $isModalVisible, exerciseName: viewModel.currentExercises[index].name, description: viewModel.currentExercises[index].description, time: viewModel.currentExercises[index].duration, repetitions: viewModel.currentExercises[index].timesOfRepetition)
+                                    .preferredColorScheme(.dark)
+                            }
                             .frame(width: 21, height: 21)
                             .offset(x: -20, y: 6)
-                        
+                            
                         CircleButton(imageName: "xmark", size: 60, fontSize: 27, action: { self.presentationMode.wrappedValue.dismiss() }, hasImage: true)
                             .frame(width: 60, height: 60)
                             .offset(x: 0)
@@ -210,11 +216,11 @@ struct ExerciseiOSView: View {
                     }
                 }
             .navigationBarHidden(true)
-        //                if isModalVisible {
-        //                    overlay(
-        //                        ModalView(isVisible: $isModalVisible, exerciseName: viewModel.currentExercises[index].name, description: viewModel.currentExercises[index].description, time: viewModel.currentExercises[index].duration, repetitions: viewModel.currentExercises[index].timesOfRepetition)
-        //                        .preferredColorScheme(.dark)
-        //                    )
-        //                }
+//                if isModalVisible {
+//                    sheet(isPresented: $isModalVisible, content: {
+//                        ModalView(isVisible: $isModalVisible, exerciseName: viewModel.currentExercises[index].name, description: viewModel.currentExercises[index].description, time: viewModel.currentExercises[index].duration, repetitions: viewModel.currentExercises[index].timesOfRepetition)
+//                            .preferredColorScheme(.dark)
+//                    })
+//                }
     }
 }

@@ -39,7 +39,7 @@ class NotificationManager {
         }
     }
     
-    public func setTimeOfNotification(ofType notificationType: NotificationType, minutes: Double) {
+    public func setTimeOfNotification(ofType notificationType: NotificationType, minutes: Double = 1) {
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60 * minutes, repeats: true)
         notificationTypeTriggerDict[notificationType] = trigger
     }
