@@ -53,11 +53,9 @@ struct ExerciseiOSView: View {
                                 Text("\(viewModel.currentExercises[index].name)")
                                     .font(Font.system(size: 22, weight: .bold, design: .rounded))
                                     .foregroundColor(.white)
+                                    .lineLimit(3)
                                 
-                                CircleButton(imageName: "info", size: 21, fontSize: 15, action: {isModalVisible.toggle()}, hasImage: true)
-                                    .frame(width: 21, height: 21)
-                                
-                            } .frame(width: 300, height: 25, alignment: .leading)
+                            } .frame(maxWidth: 300, alignment: .leading)
                             
                             Text("\(index + 1) de \(viewModel.currentExercises.count)")
                                 .font(Font.system(size: 18, weight: .medium, design: .rounded))
@@ -72,18 +70,21 @@ struct ExerciseiOSView: View {
                                 .foregroundColor(.white)
                         }
                         
-                        CircleButton(imageName: "xmark", size: 60, fontSize: 27, action: {adjustViewModel.finish()
-                            self.presentationMode.wrappedValue.dismiss()
-                        }, hasImage: true)
+                        CircleButton(imageName: "info", size: 21, fontSize: 15, action: {isModalVisible.toggle()}, hasImage: true)
+                            .frame(width: 21, height: 21)
+                            .offset(x: -20, y: 6)
+                        
+                        CircleButton(imageName: "xmark", size: 60, fontSize: 27, action: { self.presentationMode.wrappedValue.dismiss() }, hasImage: true)
                             .frame(width: 60, height: 60)
-                            .offset(x: 16)
+                            .offset(x: 0)
                     }
                     
                     VStack {
                         viewModel.currentExercises[index].imageExercise
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 120, height: 263, alignment: .center)
+                            .frame(maxWidth: 250)
+                            .frame(maxHeight: 250)
                     }
                     
                     VStack {
@@ -208,6 +209,7 @@ struct ExerciseiOSView: View {
                         }
                     }
                 }
+            .navigationBarHidden(true)
         //                if isModalVisible {
         //                    overlay(
         //                        ModalView(isVisible: $isModalVisible, exerciseName: viewModel.currentExercises[index].name, description: viewModel.currentExercises[index].description, time: viewModel.currentExercises[index].duration, repetitions: viewModel.currentExercises[index].timesOfRepetition)

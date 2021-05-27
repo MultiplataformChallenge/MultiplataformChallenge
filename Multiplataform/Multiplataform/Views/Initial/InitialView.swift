@@ -58,6 +58,7 @@ struct InitialView: View {
                             isActive = true
                         }) {
                             ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
+//                                .padding()
                                 .frame(width: 358, height: 366)
                                 .modifier(CardModifier())
                                 .padding([.all], 10)
@@ -69,6 +70,7 @@ struct InitialView: View {
                         NavigationLink(destination: ExerciseiOSView(viewModel: ExerciseViewModel(currentExercises: viewModel.categories[selectedItem].exercises), adjustViewModel: AdjustExerciseViewModel(), isModalVisible: false, exerciseIsActive: self.$exerciseIsActive, targetCount: CGFloat(viewModel.categories[selectedItem].exercises[0].duration)).navigationBarBackButtonHidden(true), isActive: self.$isActive) {
 
                         }
+                        .navigationBarHidden(true)
                     )
                 }
             }
