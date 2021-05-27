@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E0513A0265E79C3008F2D50 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05139F265E79C3008F2D50 /* NotificationManager.swift */; };
+		A7C8E6F4265F1CE900144B07 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05139F265E79C3008F2D50 /* NotificationManager.swift */; };
 		A7F21355265E8222008DC51C /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21354265E8222008DC51C /* NotificationCell.swift */; };
 		A7F21357265E83A9008DC51C /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21356265E83A9008DC51C /* NameCell.swift */; };
 		A7F21359265E841C008DC51C /* JourneyPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21358265E841C008DC51C /* JourneyPickerCell.swift */; };
@@ -775,6 +776,7 @@
 				EFACFA522658312000AFC6CC /* InitialViewIOS.swift in Sources */,
 				E66BBB0D26568DE300C6DDE7 /* ExerciseViewModel.swift in Sources */,
 				E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */,
+				A7C8E6F4265F1CE900144B07 /* NotificationManager.swift in Sources */,
 				E61EA702265E4F65005D602E /* CharacterView.swift in Sources */,
 				E61EA720265F29EE005D602E /* NotificationManager.swift in Sources */,
 				E61EA70B265E5773005D602E /* ConfigExerciseView.swift in Sources */,
@@ -959,7 +961,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.Multiplataform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -981,7 +983,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.Multiplataform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

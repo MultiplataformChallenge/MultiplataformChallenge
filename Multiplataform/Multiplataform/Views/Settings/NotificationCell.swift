@@ -3,7 +3,7 @@
 //  Multiplataform
 //
 //  Created by Leonardo Gomes on 26/05/21.
-//
+//swiftlint:disable control_statement
 
 import SwiftUI
 
