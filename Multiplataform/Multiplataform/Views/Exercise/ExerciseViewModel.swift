@@ -5,6 +5,7 @@
 //  Created by Brena Amorim on 20/05/21.
 //
 
+import SwiftUI
 import Combine
 import Foundation
 
@@ -26,9 +27,9 @@ final class ExerciseViewModel: ObservableObject, Identifiable {
     @Published var repetition: Int
     @Published var currentTime: Int
     
-    init() {
+    init(currentExercises: [ExerciseModel]) {
         self.index = 0
-        self.currentExercises = exercises
+        self.currentExercises = currentExercises
         self.timerState = .exercise
         self.repetition = currentExercises[index].timesOfRepetition
         self.currentTime = currentExercises[index].duration

@@ -13,11 +13,13 @@ struct Category {
     var exerciseDurationInCategory: Float
     var totalOfExercisesInCategory: Int
     var image: Image
+    var exercises: [ExerciseModel]
     
     init(name: String = "", exerciseDurationInCategory: Float = 0, totalOfExercisesInCategory: Int = 0, image: Image = Image("a")) {
         self.name = name
         self.exerciseDurationInCategory = exerciseDurationInCategory
         self.totalOfExercisesInCategory = totalOfExercisesInCategory
         self.image = image
+        self.exercises = []
     }
 }

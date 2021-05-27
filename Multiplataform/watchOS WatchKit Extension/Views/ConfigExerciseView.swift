@@ -14,7 +14,7 @@ struct ConfigExerciseView: View {
         VStack(spacing: 8) {
             HStack {
                 VStack {
-                    CircleButton(imageName: "pause", size: 55, fontSize: 30, action: { viewModel.pause() }, hasImage: true)
+                    CircleButton(imageName: "pause", size: 52, fontSize: 30, action: { viewModel.pause() }, hasImage: true)
                     //                    .buttonStyle(BorderedButtonStyle(tint: .black))
                     Text("Pausar")
                         .font(.caption2)
@@ -22,7 +22,7 @@ struct ConfigExerciseView: View {
                         .offset(y: -8)
                 }
                 VStack {
-                    CircleButton(imageName: "xmark", size: 55, fontSize: 30, action: { viewModel.finish()
+                    CircleButton(imageName: "xmark", size: 52, fontSize: 30, action: { viewModel.finish()
                         self.rootIsActive = false
                     }, hasImage: true)
                     //                    .buttonStyle(BorderedButtonStyle(tint: .black))
@@ -41,7 +41,7 @@ struct ConfigExerciseView: View {
             } .offset(y: 16)
             HStack {
                 VStack {
-                    CircleButton(imageName: "backward.fill", size: 55, fontSize: 24, action: { viewModel.back()}, hasImage: true)
+                    CircleButton(imageName: "backward.fill", size: 52, fontSize: 24, action: { viewModel.back()}, hasImage: true)
                     //                    .buttonStyle(BorderedButtonStyle(tint: .black))
                     Text("Anterior")
                         .font(.caption2)
@@ -49,7 +49,7 @@ struct ConfigExerciseView: View {
                         .offset(y: -8)
                 }
                 VStack {
-                    CircleButton(imageName: "forward.fill", size: 55, fontSize: 24, action: { viewModel.foward()}, hasImage: true)
+                    CircleButton(imageName: "forward.fill", size: 52, fontSize: 24, action: { viewModel.foward()}, hasImage: true)
                     //                    .buttonStyle(BorderedButtonStyle(tint: .black))
                     Text("Próximo")
                         .font(.caption2)

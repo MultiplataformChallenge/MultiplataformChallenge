@@ -13,6 +13,8 @@ struct ExerciseiOSView: View {
     
     // info
     @State var isModalVisible = false
+    // quit
+    @Binding var exerciseIsActive: Bool
     
     // centésimos de segundos
     let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
@@ -20,7 +22,7 @@ struct ExerciseiOSView: View {
     
     // timer config
     @State private var index: Int = 0
-    @State private var targetCount: CGFloat = CGFloat(ExerciseViewModel().currentTime)
+    @State var targetCount: CGFloat
     @State private var isFinished = false
     
     //segundos timer
@@ -171,7 +173,6 @@ struct ExerciseiOSView: View {
                                 }
                                 viewModel.repetition -= 1
                                 
-                            //                                break
                             case .pause:
                                 print("Pause")
                                 // Change for exercise
@@ -179,12 +180,10 @@ struct ExerciseiOSView: View {
                                 viewModel.timerState = .exercise
                                 targetCount = CGFloat(viewModel.currentExercises[index].duration)
                                 
-                            //                                break
                             case .rest:
                                 print("Rest")
                                 print(viewModel.currentExercises[index].name)
                                 print(index)
-                                // Change for end
                                 counter = 0
                                 if (index + 1) < (viewModel.numberOfExercises - 1) {
                                     index += 1
@@ -196,13 +195,11 @@ struct ExerciseiOSView: View {
                                     isFinished.toggle()
                                     viewModel.timerState = .end
                                 }
-                            //                                break
                             case .end:
                                 if isFinished {
                                     print("End")
                                     isFinished.toggle()
                                 }
-                            //                                break
                             }
                         }
                     }

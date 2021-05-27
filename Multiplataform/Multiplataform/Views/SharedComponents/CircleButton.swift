@@ -42,8 +42,8 @@ func printSomething() {
     
 }
 
-struct CircleButton_Previews: PreviewProvider {
-    static var previews: some View {
-        CircleButton(imageName: "pause", size: 55, fontSize: 30, action: {print("pressed")}, hasImage: true)
-    }
-}
+//struct CircleButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CircleButton(imageName: "pause", size: 55, fontSize: 30, action: {print("pressed")}, hasImage: true)
+//    }
+//}

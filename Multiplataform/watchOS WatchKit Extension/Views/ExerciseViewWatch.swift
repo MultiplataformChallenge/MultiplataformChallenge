@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ExerciseViewWatch: View {
     @ObservedObject var viewModel: ExerciseViewModel
-
     //centésimos de segundos
     let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
 
     // timer config
     @State private var index: Int = 0
-    @State private var targetCount: CGFloat = CGFloat(ExerciseViewModel().currentTime)
+    @State var targetCount: CGFloat
     @State private var isFinished = false
 
     //segundos timer

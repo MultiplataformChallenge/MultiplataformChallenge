@@ -9,9 +9,12 @@ import SwiftUI
 
 struct TabBar: View {
     @Binding var rootIsActive: Bool
+    var exerciseViewModel: ExerciseViewModel
+    var targetCount: CGFloat
+
     var body: some View {
         TabView {
-            ExerciseViewWatch(viewModel: ExerciseViewModel())
+            ExerciseViewWatch(viewModel: exerciseViewModel, targetCount: CGFloat(exerciseViewModel.currentTime))
             ConfigExerciseView(viewModel: AdjustExerciseViewModel(), rootIsActive: $rootIsActive)
         }
         .tabViewStyle(PageTabViewStyle())
