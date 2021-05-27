@@ -11,6 +11,7 @@
 		A7F21355265E8222008DC51C /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21354265E8222008DC51C /* NotificationCell.swift */; };
 		A7F21357265E83A9008DC51C /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21356265E83A9008DC51C /* NameCell.swift */; };
 		A7F21359265E841C008DC51C /* JourneyPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F21358265E841C008DC51C /* JourneyPickerCell.swift */; };
+		E60E5BF6265FBDC700DBBDE3 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E5BF5265FBDC700DBBDE3 /* InfoView.swift */; };
 		E61EA6FB265E4DD1005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
 		E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FA265E4DD1005D602E /* CircleButton.swift */; };
 		E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA6FD265E4EB8005D602E /* TimerView.swift */; };
@@ -140,6 +141,7 @@
 		A7F21354265E8222008DC51C /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		A7F21356265E83A9008DC51C /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
 		A7F21358265E841C008DC51C /* JourneyPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPickerCell.swift; sourceTree = "<group>"; };
+		E60E5BF5265FBDC700DBBDE3 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		E61EA6FA265E4DD1005D602E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		E61EA6FD265E4EB8005D602E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E61EA700265E4F56005D602E /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 			children = (
 				EFACFA512658312000AFC6CC /* InitialViewIOS.swift */,
 				E61EA71D265F24D2005D602E /* ExerciseiOSView.swift */,
+				E60E5BF5265FBDC700DBBDE3 /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -712,6 +715,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB62A8B265E989F00F2FFE3 /* TabBar.swift in Sources */,
+				E60E5BF6265FBDC700DBBDE3 /* InfoView.swift in Sources */,
 				E61EA6FE265E4EB8005D602E /* TimerView.swift in Sources */,
 				E66BBAAB26568BB800C6DDE7 /* SettingsView.swift in Sources */,
 				EFACFA572658386E00AFC6CC /* InitialViewWatch.swift in Sources */,

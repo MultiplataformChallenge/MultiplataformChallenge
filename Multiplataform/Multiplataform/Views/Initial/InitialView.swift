@@ -54,6 +54,7 @@ struct InitialView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(0..<viewModel.categories.count) { item in
                         Button(action: {
+                            print("Exercício")
                             selectedItem = item
                             isActive = true
                         }) {
@@ -90,11 +91,11 @@ struct BackgroundModifier: ViewModifier {
     }
 }
 
-struct InitialView_Previews: PreviewProvider {
-    static var previews: some View {
-        InitialView()
-    }
-}
+//struct InitialView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        InitialView()
+//    }
+//}
 
 //NavigationView {
 //    VStack(alignment: .trailing) {
