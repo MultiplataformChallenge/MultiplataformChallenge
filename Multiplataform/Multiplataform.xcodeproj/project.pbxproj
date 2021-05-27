@@ -24,7 +24,6 @@
 		E61EA70E265E57D6005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
 		E61EA71C265F2312005D602E /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E61EA71E265F24D2005D602E /* ExerciseiOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA71D265F24D2005D602E /* ExerciseiOSView.swift */; };
-		E61EA720265F29EE005D602E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05139F265E79C3008F2D50 /* NotificationManager.swift */; };
 		E61EA721265F3248005D602E /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA9A26568BA100C6DDE7 /* InitialView.swift */; };
 		E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
@@ -572,7 +571,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					E66BB9FE26568A0300C6DDE7 = {
 						CreatedOnToolsVersion = 12.4;
@@ -778,7 +777,6 @@
 				E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */,
 				A7C8E6F4265F1CE900144B07 /* NotificationManager.swift in Sources */,
 				E61EA702265E4F65005D602E /* CharacterView.swift in Sources */,
-				E61EA720265F29EE005D602E /* NotificationManager.swift in Sources */,
 				E61EA70B265E5773005D602E /* ConfigExerciseView.swift in Sources */,
 				E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */,
@@ -949,6 +947,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Multiplataform/Preview Content\"";
 				DEVELOPMENT_TEAM = BSANZ76H3Y;
 				ENABLE_PREVIEWS = YES;
@@ -971,6 +970,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Multiplataform/Preview Content\"";
 				DEVELOPMENT_TEAM = BSANZ76H3Y;
 				ENABLE_PREVIEWS = YES;
@@ -1076,6 +1076,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"watchOS WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = BSANZ76H3Y;
 				ENABLE_PREVIEWS = YES;
@@ -1085,7 +1086,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.watchOS.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.Multiplataform.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1100,6 +1102,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"watchOS WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = BSANZ76H3Y;
 				ENABLE_PREVIEWS = YES;
@@ -1109,7 +1112,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.watchOS.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.Multiplataform.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1127,6 +1131,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BSANZ76H3Y;
 				IBSC_MODULE = watchOS_WatchKit_Extension;
 				INFOPLIST_FILE = "watchOS WatchKit App/Info.plist";
@@ -1135,7 +1140,8 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.watchOS.watchkitapp;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.Multiplataform.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1154,6 +1160,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BSANZ76H3Y;
 				IBSC_MODULE = watchOS_WatchKit_Extension;
 				INFOPLIST_FILE = "watchOS WatchKit App/Info.plist";
@@ -1162,7 +1169,8 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.watchOS.watchkitapp;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.Multiplataform.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1176,10 +1184,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BSANZ76H3Y;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.watchOS;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.Multiplataform;
 				PRODUCT_NAME = "Alongaí";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1189,10 +1197,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BSANZ76H3Y;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.watchOS;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brenaamorim.Multiplataform;
 				PRODUCT_NAME = "Alongaí";
 				SWIFT_VERSION = 5.0;
 			};
