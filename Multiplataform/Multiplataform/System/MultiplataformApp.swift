@@ -19,6 +19,7 @@ struct MultiplataformApp: App {
     
     var body: some Scene {
         WindowGroup {
+//            ExerciseiOSView(viewModel: ExerciseViewModel(), adjustViewModel: AdjustExerciseViewModel())
             InitialView()
             
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)

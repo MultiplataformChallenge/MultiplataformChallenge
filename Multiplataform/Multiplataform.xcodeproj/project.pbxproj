@@ -21,6 +21,10 @@
 		E61EA70B265E5773005D602E /* ConfigExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70A265E5773005D602E /* ConfigExerciseView.swift */; };
 		E61EA70D265E57AC005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
 		E61EA70E265E57D6005D602E /* AdjustExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */; };
+		E61EA71C265F2312005D602E /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
+		E61EA71E265F24D2005D602E /* ExerciseiOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA71D265F24D2005D602E /* ExerciseiOSView.swift */; };
+		E61EA720265F29EE005D602E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05139F265E79C3008F2D50 /* NotificationManager.swift */; };
+		E61EA721265F3248005D602E /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA9A26568BA100C6DDE7 /* InitialView.swift */; };
 		E66BBA0326568A0300C6DDE7 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
 		E66BBA0726568A0400C6DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA0626568A0400C6DDE7 /* Assets.xcassets */; };
@@ -38,7 +42,6 @@
 		E66BBA5626568A5400C6DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA5526568A5400C6DDE7 /* Assets.xcassets */; };
 		E66BBA5926568A5400C6DDE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66BBA5826568A5400C6DDE7 /* Preview Assets.xcassets */; };
 		E66BBA9326568B9500C6DDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0426568A0300C6DDE7 /* ContentView.swift */; };
-		E66BBA9B26568BA100C6DDE7 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA9A26568BA100C6DDE7 /* InitialView.swift */; };
 		E66BBAA326568BAB00C6DDE7 /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBAA226568BAB00C6DDE7 /* InitialViewModel.swift */; };
 		E66BBAAB26568BB800C6DDE7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBAAA26568BB800C6DDE7 /* SettingsView.swift */; };
 		E66BBAB326568BC400C6DDE7 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBAB226568BC400C6DDE7 /* SettingsViewModel.swift */; };
@@ -72,7 +75,6 @@
 		EFB62A7E265D23A600F2FFE3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A7C265D221400F2FFE3 /* CategoryModel.swift */; };
 		EFB62A7F265E707A00F2FFE3 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA700265E4F56005D602E /* CharacterView.swift */; };
 		EFB62A83265E826F00F2FFE3 /* ExerciseViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */; };
-		EFB62A89265E984100F2FFE3 /* MultiplataformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */; };
 		EFB62A8B265E989F00F2FFE3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A8A265E989F00F2FFE3 /* TabBar.swift */; };
 		EFB62A8C265E98AB00F2FFE3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB62A8A265E989F00F2FFE3 /* TabBar.swift */; };
 		EFB62A8D265EBA1800F2FFE3 /* ConfigExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA70A265E5773005D602E /* ConfigExerciseView.swift */; };
@@ -145,6 +147,7 @@
 		E61EA706265E51D0005D602E /* ExerciseViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewWatch.swift; sourceTree = "<group>"; };
 		E61EA70A265E5773005D602E /* ConfigExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigExerciseView.swift; sourceTree = "<group>"; };
 		E61EA70C265E57AC005D602E /* AdjustExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustExerciseViewModel.swift; sourceTree = "<group>"; };
+		E61EA71D265F24D2005D602E /* ExerciseiOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseiOSView.swift; sourceTree = "<group>"; };
 		E66BB9FF26568A0300C6DDE7 /* Multiplataform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplataform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66BBA0226568A0300C6DDE7 /* MultiplataformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplataformApp.swift; sourceTree = "<group>"; };
 		E66BBA0426568A0300C6DDE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -445,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				EFACFA512658312000AFC6CC /* InitialViewIOS.swift */,
+				E61EA71D265F24D2005D602E /* ExerciseiOSView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -722,9 +726,10 @@
 				E66BBA0526568A0300C6DDE7 /* ContentView.swift in Sources */,
 				EF05EBCB265C9B5400855939 /* ExerciseData.json in Sources */,
 				E61EA70D265E57AC005D602E /* AdjustExerciseViewModel.swift in Sources */,
+				E61EA71E265F24D2005D602E /* ExerciseiOSView.swift in Sources */,
 				A7F21359265E841C008DC51C /* JourneyPickerCell.swift in Sources */,
 				EFACFA55265836CA00AFC6CC /* CardModifier.swift in Sources */,
-				E66BBA9B26568BA100C6DDE7 /* InitialView.swift in Sources */,
+				E61EA721265F3248005D602E /* InitialView.swift in Sources */,
 				EFB62A8D265EBA1800F2FFE3 /* ConfigExerciseView.swift in Sources */,
 				EFACFA532658318900AFC6CC /* InitialViewIOS.swift in Sources */,
 				EF05EBCD265C9C1300855939 /* ExerciseViewModelGeneral.swift in Sources */,
@@ -766,10 +771,10 @@
 				E61EA707265E51D0005D602E /* ExerciseViewWatch.swift in Sources */,
 				EFACFA522658312000AFC6CC /* InitialViewIOS.swift in Sources */,
 				E66BBB0D26568DE300C6DDE7 /* ExerciseViewModel.swift in Sources */,
-				EFB62A89265E984100F2FFE3 /* MultiplataformApp.swift in Sources */,
 				E61EA6FC265E4DE9005D602E /* CircleButton.swift in Sources */,
 				A7C8E6F4265F1CE900144B07 /* NotificationManager.swift in Sources */,
 				E61EA702265E4F65005D602E /* CharacterView.swift in Sources */,
+				E61EA720265F29EE005D602E /* NotificationManager.swift in Sources */,
 				E61EA70B265E5773005D602E /* ConfigExerciseView.swift in Sources */,
 				E66BBB2226568E6C00C6DDE7 /* Multiplataform.xcdatamodeld in Sources */,
 				E66BBB1B26568E0900C6DDE7 /* Persistence.swift in Sources */,
@@ -778,6 +783,7 @@
 				EFACFA4A2658005F00AFC6CC /* InitialViewWatch.swift in Sources */,
 				EF05EBD0265C9C3B00855939 /* ExerciseViewModelGeneral.swift in Sources */,
 				EFB62A7E265D23A600F2FFE3 /* CategoryModel.swift in Sources */,
+				E61EA71C265F2312005D602E /* MultiplataformApp.swift in Sources */,
 				E66BBA9326568B9500C6DDE7 /* ContentView.swift in Sources */,
 				E66BBA5026568A5300C6DDE7 /* NotificationController.swift in Sources */,
 				E66BBA5426568A5300C6DDE7 /* ComplicationController.swift in Sources */,

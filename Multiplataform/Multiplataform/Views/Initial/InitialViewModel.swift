@@ -32,6 +32,7 @@ class InitialViewModel {
     }
      
     func populateCategory(category: inout Category, index: Int) {
+        category.exercises.append(exercises[index])
         category.totalOfExercisesInCategory += 1
         category.exerciseDurationInCategory += Float(exercises[index].timesOfRepetition * exercises[index].duration + exercises[index].restTimeBetweenDifferentExercises)
         

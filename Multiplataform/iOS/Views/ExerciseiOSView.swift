@@ -1,40 +1,108 @@
 //
-//  ExerciseViewWatch.swift
-//  watchOS WatchKit Extension
+//  ExerciseiOSView.swift
+//  Multiplataform
 //
 //  Created by Brena Amorim on 26/05/21.
 //
 
 import SwiftUI
 
-struct ExerciseViewWatch: View {
+struct ExerciseiOSView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     @ObservedObject var viewModel: ExerciseViewModel
-    //centésimos de segundos
+    @ObservedObject var adjustViewModel: AdjustExerciseViewModel
+    
+    // info
+    @State var isModalVisible = false
+    // quit
+    @Binding var exerciseIsActive: Bool
+    
+    // centésimos de segundos
     let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
-
+    @State private var nameOfExercise: String = ""
+    
     // timer config
     @State private var index: Int = 0
     @State var targetCount: CGFloat
     @State private var isFinished = false
-
+    
     //segundos timer
+    @State private var elapsedTime: CGFloat = 0
     @State private var counter: CGFloat = 0
-
+    
     // config exercise
-    @State private var pause = false
-    @State private var finish = false
-    @State private var back = false
-    @State private var forward = false
-
+    //    @State private var pause = false
+    //    @State private var finish = false
+    //    @State private var back = false
+    //    @State private var forward = false
+    
+    func printInfo() {
+        print("info")
+    }
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                CharacterView(image: viewModel.currentExercises[index].imageExercise)
-                    .offset(y: 8)
-                ZStack {
-                    TimerView(size: 60, fontSize: 24, progress: counter/targetCount, targetCount: $targetCount, counter: $counter)
-                        .offset(y: 16)
-                }.onReceive(timer) { _ in
+        Color.black
+            .ignoresSafeArea(.all) // Ignore just for the color
+            .overlay(
+                
+                VStack {
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Text("\(viewModel.currentExercises[index].name)")
+                                    .font(Font.system(size: 22, weight: .bold, design: .rounded))
+                                    .foregroundColor(.white)
+                                    .lineLimit(3)
+                                
+                            } .frame(maxWidth: 300, alignment: .leading)
+                            
+                            Text("\(index + 1) de \(viewModel.currentExercises.count)")
+                                .font(Font.system(size: 18, weight: .medium, design: .rounded))
+                                .foregroundColor(.white)
+                            
+                            Text("Tempo Total")
+                                .font(Font.system(size: 22, weight: .bold, design: .rounded))
+                                .foregroundColor(.white)
+                            
+                            Text("\(Int(elapsedTime/60)):\(Int(elapsedTime + 1))")
+                                .font(Font.system(size: 18, weight: .medium, design: .rounded))
+                                .foregroundColor(.white)
+                        }
+                        
+                        CircleButton(imageName: "info", size: 21, fontSize: 15, action: {isModalVisible.toggle()}, hasImage: true)
+                            .frame(width: 21, height: 21)
+                            .offset(x: -20, y: 6)
+                        
+                        CircleButton(imageName: "xmark", size: 60, fontSize: 27, action: { self.presentationMode.wrappedValue.dismiss() }, hasImage: true)
+                            .frame(width: 60, height: 60)
+                            .offset(x: 0)
+                    }
+                    
+                    VStack {
+                        viewModel.currentExercises[index].imageExercise
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: 250)
+                            .frame(maxHeight: 250)
+                    }
+                    
+                    VStack {
+                        TimerView(size: 150, fontSize: 64, progress: counter/targetCount, targetCount: $targetCount, counter: $counter)
+                            .offset(y: 32)
+                        HStack(alignment: .top) {
+                            CircleButton(imageName: "backward.fill", size: 70, fontSize: 30, action: {adjustViewModel.back()}, hasImage: true)
+                                .frame(width: 60, height: 60)
+                                .offset(x: -32, y: 8)
+                            CircleButton(imageName: "pause", size: 70, fontSize: 38, action: {adjustViewModel.pause()}, hasImage: true)
+                                .padding(.top, 38)
+                            CircleButton(imageName: "forward.fill", size: 70, fontSize: 30, action: {adjustViewModel.foward()}, hasImage: true)
+                                .frame(width: 60, height: 60)
+                                //                            .padding(.trailing, 32)
+                                .offset(x: 32, y: 8)
+                        }
+                    }
+                }).onReceive(timer) { _ in
                     // Timer runs if have repetitions
                     if viewModel.repetition >= 0 {
                         if counter <= targetCount {
@@ -47,9 +115,10 @@ struct ExerciseViewWatch: View {
                                         // Verify if is Paused
                                         if UserDefaults.standard.bool(forKey: "isPaused") == false {
                                             self.counter += 0.01
+                                            self.elapsedTime += 0.01
                                         } else {
                                             // pause
-//                                            print("Exercise paused")
+                                            //                                            print("Exercise paused")
                                         }
                                     } else {
                                         // foward
@@ -108,21 +177,18 @@ struct ExerciseViewWatch: View {
                                     targetCount = CGFloat(viewModel.currentExercises[index].restTimeBetweenSameExercise)
                                 }
                                 viewModel.repetition -= 1
-
-//                                break
+                                
                             case .pause:
                                 print("Pause")
                                 // Change for exercise
                                 counter = 0
                                 viewModel.timerState = .exercise
                                 targetCount = CGFloat(viewModel.currentExercises[index].duration)
-
-//                                break
+                                
                             case .rest:
                                 print("Rest")
                                 print(viewModel.currentExercises[index].name)
                                 print(index)
-                                // Change for end
                                 counter = 0
                                 if (index + 1) < (viewModel.numberOfExercises - 1) {
                                     index += 1
@@ -134,19 +200,21 @@ struct ExerciseViewWatch: View {
                                     isFinished.toggle()
                                     viewModel.timerState = .end
                                 }
-//                                break
                             case .end:
                                 if isFinished {
                                     print("End")
                                     isFinished.toggle()
                                 }
-//                                break
                             }
                         }
                     }
                 }
-            }
-            .navigationTitle("\(index + 1) de \(viewModel.numberOfExercises)")
-        }
+            .navigationBarHidden(true)
+        //                if isModalVisible {
+        //                    overlay(
+        //                        ModalView(isVisible: $isModalVisible, exerciseName: viewModel.currentExercises[index].name, description: viewModel.currentExercises[index].description, time: viewModel.currentExercises[index].duration, repetitions: viewModel.currentExercises[index].timesOfRepetition)
+        //                        .preferredColorScheme(.dark)
+        //                    )
+        //                }
     }
 }
