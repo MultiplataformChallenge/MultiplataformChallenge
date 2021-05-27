@@ -61,7 +61,6 @@ struct InitialView: View {
                                 isActive = true
                             }) {
                                 ExerciseCellIOS(cardIndex: item, category: viewModel.categories[item])
-                                    .padding()
                             }
                             .buttonStyle(DefaultButtonStyle())
                         }
