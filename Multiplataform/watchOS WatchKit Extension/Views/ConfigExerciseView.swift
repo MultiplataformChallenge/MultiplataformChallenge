@@ -4,19 +4,38 @@
 //
 //  Created by Brena Amorim on 26/05/21.
 //
+//swiftlint:disable multiple_closures_with_trailing_closure
 
 import SwiftUI
 
 struct ConfigExerciseView: View {
     @ObservedObject var viewModel: AdjustExerciseViewModel
     @Binding var rootIsActive: Bool
+    @State var isPlaying: Bool = false
+
     var body: some View {
         VStack(spacing: 8) {
             HStack {
                 VStack {
-                    CircleButton(imageName: "pause", size: 52, fontSize: 30, action: { viewModel.pause() }, hasImage: true)
+                    // pause
+                    Button(action: {
+                        viewModel.pause()
+                       self.isPlaying.toggle()
+                    }) {
+                        Image(systemName: self.isPlaying == true ? "play.fill" : "pause")
+                            .padding()
+                            .frame(width: 52, height: 52)
+                            .background(LinearGradient(gradient: Color.gradient, startPoint: .top, endPoint: .bottom))
+                            .clipShape(Circle())
+                            .font(Font.system(size: 30, weight: .black, design: .rounded))
+                            .foregroundColor(.white)
+                    }
+                    .frame(width: 52, height: 52)
+                    .padding()
+//                    .padding(.top, 38)
+                    
                     //                    .buttonStyle(BorderedButtonStyle(tint: .black))
-                    Text("Pausar")
+                    Text(self.isPlaying == true ? "Continuar" : "Pausar")
                         .font(.caption2)
                         .foregroundColor(.white)
                         .offset(y: -8)
@@ -25,14 +44,7 @@ struct ConfigExerciseView: View {
                     CircleButton(imageName: "xmark", size: 52, fontSize: 30, action: { viewModel.finish()
                         self.rootIsActive = false
                     }, hasImage: true)
-                    //                    .buttonStyle(BorderedButtonStyle(tint: .black))
-                    //                    .overlay(
-                    //                        Image(systemName: self.viewModel.finishActive ? "xmark" : "play")
-                    //                            .padding()
-                    //                            .frame(width: CGFloat(55), height: CGFloat(55))
-                    //                            .font(Font.system(size: CGFloat(30), weight: .black, design: .rounded))
-                    //                            .foregroundColor(.white)
-                    //                    )
+                    
                     Text("Encerrar")
                         .font(.caption2)
                         .foregroundColor(.white)
