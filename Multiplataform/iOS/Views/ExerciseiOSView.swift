@@ -74,8 +74,10 @@ struct ExerciseiOSView: View {
 //                        isModalVisible.toggle()
                         CircleButton(imageName: "info", size: 21, fontSize: 15, action: {showingSheet.toggle()}, hasImage: true)
                             .sheet(isPresented: $showingSheet) {
-                                ModalView(isVisible: $isModalVisible, exerciseName: viewModel.currentExercises[index].name, description: viewModel.currentExercises[index].description, time: viewModel.currentExercises[index].duration, repetitions: viewModel.currentExercises[index].timesOfRepetition)
-                                    .preferredColorScheme(.dark)
+                                NavigationView {
+                                    ModalView(isVisible: $isModalVisible, exerciseName: viewModel.currentExercises[index].name, description: viewModel.currentExercises[index].description, time: viewModel.currentExercises[index].duration, repetitions: viewModel.currentExercises[index].timesOfRepetition)
+                                        .preferredColorScheme(.dark)
+                                }.accentColor(.actionPurple)
                             }
                             .frame(width: 21, height: 21)
                             .offset(x: -20, y: 6)
@@ -124,7 +126,7 @@ struct ExerciseiOSView: View {
                                             self.elapsedTime += 0.01
                                         } else {
                                             // pause
-                                            //                                            print("Exercise paused")
+                                            // print("Exercise paused")
                                         }
                                     } else {
                                         // foward
@@ -225,12 +227,6 @@ struct ExerciseiOSView: View {
                     }
                 }
             .navigationBarHidden(true)
-//                if isModalVisible {
-//                    sheet(isPresented: $isModalVisible, content: {
-//                        ModalView(isVisible: $isModalVisible, exerciseName: viewModel.currentExercises[index].name, description: viewModel.currentExercises[index].description, time: viewModel.currentExercises[index].duration, repetitions: viewModel.currentExercises[index].timesOfRepetition)
-//                            .preferredColorScheme(.dark)
-//                    })
-//                }
     }
     
     func hapticRest() {
