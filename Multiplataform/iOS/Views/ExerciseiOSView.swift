@@ -155,7 +155,7 @@ struct ExerciseiOSView: View {
                                         print((index - 1))
                                         index -= 1
                                         self.counter = 0
-                                        targetCount = CGFloat(viewModel.currentExercises[index].timesOfRepetition)
+                                        targetCount = CGFloat(viewModel.currentExercises[index].duration)
                                         viewModel.timerState = .exercise
                                         viewModel.repetition = viewModel.currentExercises[index].timesOfRepetition
                                         UserDefaults.standard.setValue(false, forKey: "back")
@@ -233,12 +233,12 @@ struct ExerciseiOSView: View {
 //                }
     }
     
-    func hapticPause() {
+    func hapticRest() {
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.success)
     }
     
-    func hapticRest() {
+    func hapticPause() {
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.warning)
     }
