@@ -174,11 +174,15 @@ struct ExerciseiOSView: View {
                                 counter = 0
                                 // Change for rest
                                 if viewModel.repetition == 1 {
+                                    hapticRest()
+                                    
                                     viewModel.timerState = .rest
                                     targetCount = CGFloat(viewModel.currentExercises[index].restTimeBetweenDifferentExercises)
                                 }
                                 // Change for time between exercises
                                 else {
+                                    hapticPause()
+                                    
                                     viewModel.timerState = .pause
                                     targetCount = CGFloat(viewModel.currentExercises[index].restTimeBetweenSameExercise)
                                 }
@@ -186,6 +190,8 @@ struct ExerciseiOSView: View {
                                 
                             case .pause:
                                 print("Pause")
+                                hapticExercise()
+
                                 // Change for exercise
                                 counter = 0
                                 viewModel.timerState = .exercise
@@ -193,6 +199,8 @@ struct ExerciseiOSView: View {
                                 
                             case .rest:
                                 print("Rest")
+                                hapticExercise()
+
                                 print(viewModel.currentExercises[index].name)
                                 print(index)
                                 counter = 0
@@ -209,6 +217,7 @@ struct ExerciseiOSView: View {
                             case .end:
                                 if isFinished {
                                     print("End")
+                                    hapticExercise()
                                     isFinished.toggle()
                                 }
                             }
@@ -222,5 +231,20 @@ struct ExerciseiOSView: View {
 //                            .preferredColorScheme(.dark)
 //                    })
 //                }
+    }
+    
+    func hapticPause() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+    }
+    
+    func hapticRest() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.warning)
+    }
+    
+    func hapticExercise() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.error)
     }
 }
